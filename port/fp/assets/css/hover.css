@@ -1,0 +1,218 @@
+/*
+ /*
+* Author: ItsOkayItsOfficial
+* URL: www.itsokayitsofficial.io
+*
+* Project Name: Hover Effects for ItsOkayItsOfficial
+* Version: 1.0
+* Date: 2-11-2016
+* URL: www.itsokayitsofficial.io
+*/
+
+/*=========================================
+   HOVER EFFECTS
+ =========================================*/
+
+.grid {
+	display: block;
+	margin: 0 auto;
+	float: center;
+	clear: both;
+	padding: 2em;
+	list-style: none;
+	text-align: center;
+	vertical-align: middle;
+	float: center;
+}
+
+/* Julia */
+
+.effect-julia {
+	position: center;
+	padding: 2em;
+	text-align: center;
+	float: center;
+	background: transparent;
+}
+
+.effect-julia figure {
+	position: center;
+	float: center;
+	background: transparent;
+	text-align: center;
+}
+
+.effect-julia img {
+	margin: 0 auto;
+	overflow: hidden;
+	max-height: 150px;
+	-webkit-transition: opacity 1s, -webkit-transform 1s;
+	transition: opacity 1s, transform 1s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.effect-julia figcaption {
+	text-align: left;
+	overflow: hidden;
+}
+
+.effect-julia h2 {
+	position: relative;
+	padding: 0.5em 0;
+}
+
+.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-360px,0,0);
+	transform: translate3d(-360px,0,0);
+}
+
+.effect-julia p:first-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.effect-julia p:nth-of-type(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.effect-julia p:nth-of-type(3) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.effect-julia:hover p:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.effect-julia:hover p:nth-of-type(2) {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+}
+
+.effect-julia:hover p:nth-of-type(3) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.effect-julia:hover img {
+	opacity: 0.4;
+	-webkit-transform: scale3d(1.1,1.1,1);
+	transform: scale3d(1.1,1.1,1);
+}
+
+.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+/* Steve */
+
+.effect-steve {
+	margin: 0 auto;
+	float: center;
+	z-index: auto;
+	overflow: hidden;
+	background: transparent;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.effect-steve:before,
+.effect-steve h2:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	content: '';
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.effect-steve:before {
+	box-shadow: 0 3px 30px rgba(0,0,0,0);
+	opacity: 0;
+}
+
+.effect-steve figcaption {
+	z-index: 1;
+}
+
+.effect-steve img {
+	margin: 0 auto;
+	float: center;
+	align: center;
+	max-height: 100px;
+	vertical-align: middle;
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: perspective(1000px) translate3d(0,0,0);
+	transform: perspective(1000px) translate3d(0,0,0);
+}
+
+.effect-steve h2,
+.effect-steve p {
+	background: #2d434e;
+	color: #fff;
+}
+
+.effect-steve h2 {
+	position: relative;
+	margin-top: 2em;
+	padding: 0.25em;
+}
+
+.effect-steve h2:before {
+	box-shadow: 0 1px 10px rgba(0,0,0,0.5);
+}
+
+.effect-steve p {
+	display: inline-block;
+	margin-top: 1em;
+	padding: 0.5em;
+	font-weight: 400;
+	font-size: 75%;
+	opacity: 0;
+
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale3d(0.9,0.9,1);
+	transform: scale3d(0.9,0.9,1);
+}
+
+.effect-steve:hover:before {
+	opacity: 1;
+}
+
+.effect-steve:hover img {
+	-webkit-transform: perspective(1000px) translate3d(0,0,21px);
+	transform: perspective(1000px) translate3d(0,0,21px);
+}
+
+.effect-steve:hover h2:before {
+	opacity: 0;
+}
+
+.effect-steve:hover p {
+	opacity: 1;
+	-webkit-transform: scale3d(1,1,1);
+	transform: scale3d(1,1,1);
+}

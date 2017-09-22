@@ -1,0 +1,207 @@
+/*
+* Author: ItsOkay ItsOfficial
+* URL: www.itsokayitsofficial.io
+*
+* Project Name: The Kansas Society Website
+* Version: 2.0
+* Date: 10-19-2015
+* URL: www.kansassociety.org
+*/
+
+
+.main { 	
+	background:#505D6E url(../images/body5.jpg) no-repeat center center fixed; 
+	min-height:100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bad {
+	background:#505D6E url(../images/404.jpg) no-repeat center center fixed; 
+	min-height:100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	background:transparent;
+	min-height:100%; 	
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	line-height: 1.5em;
+	font-size:14px;
+	font-family: Helvetica, Arial, sans-serif;
+	color:#fff;
+	color:rgba(255,255,255,.8); 
+	font-weight: normal;
+}
+
+/********************************************************/
+/*                    Navigation bar                    */
+/********************************************************/
+.mainmenu { z-index: 999999; width:100%;  padding: 30px 0 0 0;}
+@media (min-width: 768px) {
+	.mainmenu { position: fixed; }
+}
+
+.navbar-toggle {
+	position:relative;
+	float:left;
+	display:block;
+	padding: 9px 10px;
+	background: rgba(255, 255, 255, 0.0);
+	background-image: none;
+	border: 0 none;
+	top:0px; 
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	outline: 0;
+	opacity: 1;
+	-webkit-transition: .45s ease-in;
+	-moz-transition: .45s ease-in;
+	transition: .45s ease-in;
+}
+
+.navbar-toggle span {
+
+}
+
+.navbar-toggle .fa-star {
+	display: block;
+	width: 22px;
+	color: #fff;
+}
+
+.navbar-toggle .pet {
+	color: rgba(255, 255, 255, 0.8);
+	margin-top: 4px;
+	margin-left: 10px;
+	-webkit-transition-delay: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+.navbar-toggle .set {
+	color: rgba(255, 255, 255, 0.5);
+	margin-top: 2px;
+	margin-right: 10px;
+}
+
+.navbar-toggle .met {
+	color: rgba(255, 255, 255, 0.2);
+	margin-top: 3px;
+	margin-left: 15px;
+}
+
+.open .navbar-toggle { 
+	top:-70px; 
+	opacity: 0;  
+}
+
+.mainmenu .dropdown-menu {
+	top: -14em;
+	left: 0px;
+	font-size: 13px;
+	padding:0;
+	background:none;
+	border:0 none;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	display:block;
+	opacity:0;
+	-webkit-transition: all .45s ease-out;
+	-moz-transition: all .45s ease-out;
+	transition: all .45s ease-out;
+	transition-delay: all .5s;
+}
+
+.mainmenu .dropdown-menu .active { 
+	font-weight:bold;
+}
+
+.mainmenu .open .dropdown-menu { 
+	top:2px;
+	opacity:1;
+}
+
+.mainmenu .dropdown-menu a { 
+	padding:10px 10px;
+	margin:0;
+	color:white;
+	text-decoration: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+.mainmenu .dropdown-menu a:hover { 
+	background:rgba(255,255,255,.1);
+	color:white;
+	padding:10px 8px 10px 12px;
+}
+
+/********************************************************/
+/*                   UI - Buttons                       */
+/********************************************************/
+
+.btn {
+	color:#333;
+	text-shadow: none;
+	text-decoration: none;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border:0 none;
+}
+
+.btn:hover {
+	color:#000;
+}
+
+.btn-lg { 
+	padding:16px 30px;
+	font-size:inherit;
+}
+
+.btn-link {
+	color:rgba(255,255,255,.8);
+}
+
+.btn-link:hover, .btn-link:focus, .btn-link:active {
+	color:#fff
+}
+
+.btn-default {
+	background: rgba(255,255,255,.5);
+}
+
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+	background: rgba(255,255,255,.8);
+}
+
+.btn-primary {
+	background: rgba(255,255,255,.2);
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active {
+	background: rgba(255,255,255,.5);
+
+	.nav ul {
+    *zoom:1;
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:#333;
+}
+
+
+
+
+
+

@@ -1,0 +1,429 @@
+/*
+* Author: ItsOkayItsOfficial
+* URL: www.itsokayitsofficial.io
+*
+* Project Name: ItsOkayItsOfficial Page
+* Version: 1.0
+* Date: 04-15-2015
+* URL: www.itsokayitsofficial.io
+*/
+
+
+/*=============================================
+Base Styles & Fonts Import
+=============================================*/
+
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+
+html,
+button,
+input,
+select,
+textarea {
+color: #000;
+}
+
+::-moz-selection {
+background: #f2c2c9;
+color: #a4003a;
+text-shadow: none;
+}
+
+::selection {
+background: #16a085;
+color: #a4003a;
+text-shadow: none;
+}
+
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+
+.centered {
+text-align: center
+}
+
+
+/*=============================================
+General Styles
+=============================================*/
+
+html,
+body {
+height: 100%;
+-webkit-font-smoothing: antialiased;
+-webkit-overflow-scrolling: touch;
+}
+
+body {
+font-family: "Lato" sans-serif;
+font-weight: 400;
+font-size: 16px;
+color: #000;
+
+-webkit-font-smoothing: antialiased;
+-webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: "Oswald", sans-serif;
+font-weight: 300;
+}
+
+
+/*=============================================
+Sitenav
+=============================================*/
+
+.site-nav {
+position: fixed;
+top: 50px;
+left: 0;
+width: 100%;
+z-index: 1;
+text-align: center;
+background-color: rgb(0, 0, 0, 0);
+height: 50px;
+
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+}
+
+.nav-link {
+display: inline-block;
+margin-right: 20px;
+color: #fff;
+font-weight: 300;
+font-size: 1.3em;
+line-height: 2px;
+text-decoration: none;
+text-transform: uppercase;
+padding: .5em;
+border-bottom: 1px solid rgba(190, 121, 13, 0.3);
+
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+color: #be790d;
+border-bottom: 10px solid rgba(190, 121, 13, 0.3);
+text-decoration: none;
+outline: 0;
+}
+
+.nav-link:active {
+border-bottom: 10px solid rgba(190, 121, 13, 0.3);
+text-decoration: none;
+outline: 0;
+}
+
+.logo {
+margin-right: 20px;
+height: 500px;
+width: 500px;
+
+-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;
+}
+
+.logo:hover, .logo:focus {
+	outline: 0;
+}
+
+.nav-logo {
+margin-right: 20px;
+height: 75px;
+width: 75px;
+
+-webkit-transition: all 0.8s ease-in-out;
+-moz-transition: all 0.8s ease-in-out;
+-o-transition: all 0.8s ease-in-out;
+transition: all 0.8s ease-in-out;
+}
+
+.nav-logo:hover, .nav-logo:focus {
+outline: 0px;
+}
+
+.show {
+top: 0px;
+background-color: rgba(0, 0, 0, 0.8);
+
+-webkit-transition: all 1s ease-in-out;
+-moz-transition: all 1s ease-in-out;
+-o-transition: all 1s ease-in-out;
+transition: all 1s ease-in-out;
+}
+
+.posttransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  -ms-transition: none !important;
+  transition: none !important;
+}
+
+
+/*=============================================
+Wrap Sections
+=============================================*/
+
+/* Head Wrap */
+
+#headerwrap {
+    background: url(../img/divider1b.jpg) no-repeat center top;
+    margin-top: 0px;
+    padding-top:120px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 700px;
+    width: 100%;
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+    color:#ffffff;
+    margin-top: 90px;
+    padding-bottom: 30px;
+    letter-spacing: 8px;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+/* About Wrap */
+#aboutwrap {
+display: block;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+.name {
+text-align: center;
+}
+
+.name p {
+font-size: 22px;
+font-weight: lighter;
+margin-top: 15px;
+letter-spacing: 2px;
+}
+
+.name-zig {
+width: 73px;
+height: 17px;
+margin: 38px 0 38px;
+background: url(../img/name-zig.png) 0 0 no-repeat;
+background-size: 73px 17px;
+}
+
+.name-desc h2 {
+font-family: 'Oswald', sans-serif;
+font-size: 40px;
+line-height: 1.45;
+font-weight: 300;
+}
+
+
+/* Service Wrap */
+#servicewrap {
+display: block;
+margin-top: 80px;
+margin-bottom: 80px;
+}
+
+#servicewrap h1 {
+font-weight: 300;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.service {
+text-align: left;
+}
+
+.service small {
+font-size: 12px;
+font-weight: bold
+}
+
+.service i {
+float: left;
+margin-right: 15px;
+font-size: 30px;
+vertical-align: middle;
+}
+
+.service .text {
+color: #767676
+}
+
+
+/* Portfolio Wrap */
+#portfoliowrap {
+display: block;
+margin-top: 80px;
+margin-bottom: 80px;
+text-align: center;
+}
+
+#portfoliowrap h1 {
+font-weight: 300;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.mt {
+margin-top: 50px;
+}
+
+.mb {
+margin-bottom: 60px;
+}
+
+#portfoliowrap i {
+font-size: 50px;
+}
+
+
+/* Testimonials Wrap */
+#testimonials {
+display: block;
+margin-top: 80px;
+margin-bottom: 80px;
+background-color: #f3f3f3;
+}
+
+
+/* Contact Wrap */
+#contactwrap {
+background-color: #2f2f2f;
+margin-top: 0px;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+
+#contactwrap p {
+color: #f2f2f2;
+}
+
+#contactwrap small {
+font-size: 13px;
+}
+
+#contactwrap label {
+color: #f2f2f2;
+margin-top: 10px;
+}
+
+
+/* Parallax Seperators */
+
+.about {
+background-image: url(../img/divider1.png);
+background-attachment: absolute;
+background-size: 90%;
+background-repeat: no-repeat;
+height: 300px;
+background-position: right;
+}
+
+.portfolio {
+background-image: url(../img/divider2.png);
+background-attachment: absolute;
+background-size: 90%;
+background-repeat: no-repeat;
+height: 300px;
+background-position: left;
+}
+
+.contact {
+background-image: url(../img/divider3.png);
+background-attachment: fixed;
+background-size: 100%;
+background-repeat: no-repeat;
+height: 300px;
+}
+
+
+/*=============================================
+Modal
+=============================================*/
+
+.modalResume {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalResume:target {
+    opacity:1;
+    pointer-events: auto;
+}
+
+.modalResume > div {
+    width: 800px;
+    height: 95%;
+    position: relative;
+    margin: 1% auto;
+    border-radius: none;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    overflow: hidden;
+}
+
+.close {
+    background: #fff;
+    color: #fff;
+    line-height: 0px;
+    position: absolute;
+    right: 0%;
+    text-align: center;
+    top: .5%;
+    width: 24px;
+    text-decoration: none;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+.close:hover {
+    background: #000;
+}
+
+
