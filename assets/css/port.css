@@ -1,0 +1,75 @@
+/*
+* Author: Alex P
+* URL: www.itsokayitsofficial.io
+*
+* Project Name: ItsOkayItsOfficial
+* URL: www.itsokayitsofficial.io
+*/
+
+
+/* Headwrap_node */
+
+#headerwrap_node {
+    background-color: #353535;
+    margin-top: 0px;
+    padding-top: 120px;
+    text-align: center;
+    background-attachment: relative;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap_node h1 {
+    color: #ffffff;
+    margin-top: 90px;
+    padding-bottom: 30px;
+    letter-spacing: 8px;
+    font-size: 100px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+
+/* Hal Type */
+
+.hal {
+    font-family: Courier New, Courier, monospace;
+    display: inline-block;
+}
+
+
+.hal > h3 {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hal-type {
+    color: white;
+    font-weight: normal;
+}
+
+
+/* Animation */
+
+.cursor {
+    animation: blinkTextCursor infinite normal;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, .75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
