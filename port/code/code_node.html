@@ -36,16 +36,17 @@
 
   <!-- Home Section-->
   <section id="top"></section>
-  <div id="headerwrap_node">
+  <div id="headerwrap">
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3">
-          <a><h1>Hal Bot</h1></a>
           <a>
-            <div class="hal">
-              <h3>Hal:</h3><p class="hal-type"></p>
-          </div>
+            <h1>Hal Bot</h1>
           </a>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 hal">
+          </div>
         </div>
       </div>
       <!--/row -->
@@ -59,48 +60,444 @@
   <section id="about" name="about"></section>
   <div id="aboutwrap">
     <div class="container">
+
+      <!-- Overview -->
       <div class="row">
-        <div class="col-md-4 name">
-          <img class="img-circle img-responsive" src="../../assets/img/ajp2.jpg">
+        <div class="col-md-4">
+          <a>
+            <h2>Overview</h2>
+          </a>
         </div>
-        <!--/col-md-4-->
 
-        <div class="col-md-8 name-desc">
-          <h2>DEVELOPER & <br/>STUDENT<h2/><h3>Jack-of-all-Trades</h3>
-          </br>
-
-          <div class="col-md-6">
-            <p>Between growing up in Germany to hanging out in Montreal, studying in Kansas - then Beirut-, advocacy and designing
-              in D.C. & now finally banking and finance in AZ I've tried my hand at a little bit of everything. I've managed to take part
-              in the variety of human experiences & want to put that to work for you.</p>
-            <p>I taught myself programming playing around with internet based virtual worlds and picked up markup by taking apart websites to see how they work. I haven't stopped learning since and am currently enrolled in the University of Arizona's Full-stack Developer program.</p>
-          </div>
-          <div class="col-md-6">
-            <p>From Javascript to Liquid to Ruby, designing and building for the web has become an all consuming passion. I'm particularly good at building web presence through branding, building, and social media footprinting.</p>
-            <p>Need a web presence? I got you covered. Need digital content? I'm on it. I'm here for you. </p>
-            <p></p>
-            <div class="name-zig"></div>
-          </div>
-
+        <div class="col-md-8">
+          <p>Hal is like iPhone's SIRI.</p>
+          <p>However, while SIRI is a Speech Interpretation and Recognition Interface, Hal is a Language Interpretation and
+            Recognition Interface.</p>
+          <p>Hal is a console Node.js app that takes in parameters and gives you back data.</p>
         </div>
-        <!--/col-md-8-->
+
       </div>
-      <!-- /row -->
+      <!-- /.row Overview -->
+
+      <!-- Tools -->
+      <div class="row">
+        <div class="col-md-4">
+          <a>
+            <h2>Tools</h2>
+          </a>
+        </div>
+
+        <div class="col-md-8">
+          <ul id="tools">
+            <li>
+              <p><img src="../../assets/img/icons/git1.svg"> .git</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/js1.svg"> javascript</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/txt1.svg"> text</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/json1.svg"> json</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/node1.svg"> node</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/vscode1.svg"> vs code</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/md1.svg"> markdown</p>
+            </li>
+            &nbsp
+            <li>
+              <p><img src="../../assets/img/icons/github1.svg"> github</p>
+            </li>
+          </ul>
+          <!-- /#tools -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row Tools -->
+
+      <br>
+
+      <!-- Scope -->
+      <div class="row">
+        <div class="col-md-4">
+          <a>
+            <h2>Scope</h2>
+          </a>
+        </div>
+
+        <div class="col-md-8">
+          <p>Utalizing Node.js, NPM, and CLI keywords we will pull data from the Twitter, Spotify, and OMDb API to dynamically
+            display in console.</p>
+          <table class="table table-striped table-hover ">
+            <thead>
+              <tr>
+                <th>API Queried</th>
+                <th>CLI Displayed Expected Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="twitter">
+                <td><a href="https://dev.twitter.com/overview/api" target="_blank">Twitter</a></td>
+                <td>Our last 20 tweets & when they were created.</td>
+              </tr>
+              <tr class="spotify">
+                <td><a href="https://developer.spotify.com/web-api/" target="_blank">Spotify</a></td>
+                <td>User-specified track info: Name, Artist(s), Album, Preview URL.</td>
+              </tr>
+              <tr class="omdb">
+                <td><a href="https://www.omdbapi.com/" target="_blank">OMDb</a></td>
+                <td>User-specified movie info: Title <small>(Year)</small>, Actors, <small>IMDB/RT</small> Rating, Country/Lang,
+                  Plot, Rating</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>There will be inputs for: getting keyword breakdowns, clearing logs, randomized outputs, & outputs tailored for
+            failure of API queries or user-inputs</p>
+          <p>This is to say We will as well be logging this information in a text file for manipulation</p>
+        </div>
+
+      </div>
+      <!-- /.row Scope -->
+
+      <br>
+
+      <!-- Setup -->
+      <div id="setup" class="row equal">
+        <div class="col-md-4">
+          <a>
+            <h2>Setup</h2>
+          </a>
+        </div>
+
+        <!-- Setup Explorer -->
+        <div class="col-md-2 explorer">
+          &nbsp<small>EXPLORER: hal-node-app</small>
+          <ul class="nav-tabs">
+            <p href="#git_setup" data-toggle="tab"><img src="../../assets/img/icons/git1.svg"> .gitignore</p>
+            <p href="#hal_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js</p>
+            <p href="#keys_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js</p>
+            <p href="#log_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> log.txt</p>
+            <p href="#pkg-lock_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package-lock.json</p>
+            <p href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package.json</p>
+            <p href="#random_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> random.txt</p>
+            <p href="#readme_setup" data-toggle="tab"><img src="../../assets/img/icons/md1.svg"> README.md</p>
+            <p href="#node_setup" data-toggle="tab"><img src="../../assets/img/icons/node1.svg"> node_modules</p>
+          </ul>
+        </div>
+        <!-- /#explorer -->
+
+        <!-- Setup Coder -->
+        <div class="col-md-5 explorer">
+          <div id="myTabContent" class="tab-content">
+
+            <div id="git_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/git1.svg"> .gitignore</a></li>
+              </ul>
+              <pre class="prettyprint">
+              <span class="nocode">
+              <p>This file specifies intentionally untracked files that Git should ignore.</p>
+              <p>However files already tracked by Git are not affected.</p>
+              </span>
+              </pre>
+            </div>
+
+            <div id="hal_setup" class="tab-pane fade active in">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/js1.svg"> hal.js</a></li>
+              </ul>
+              <pre class="prettyprint">
+              <span class="nocode">
+              <p>Where most of our coding will take place</p>
+              <p>Here we will write the code we need to grab the data from keys.js, dependencies for Node.js from NPM, as well as basic scripting and logging for Hal.</p>
+                </span>
+                </pre>
+            </div>
+
+            <div id="keys_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/js1.svg"> keys.js</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Just a basic Javascript file where we will store the API access tokens and 'keys' for the Spotify and Twitter
+                APIs to use</p>
+              <p>**Do Not** add this file to the .gitignore. This might be a good thing to do in the real world, but it for
+                our purposes here we need it packaged with Hal</p>
+                </span>
+                </pre>
+            </div>
+
+            <div id="log_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/txt1.svg"> log.txt</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Our log.txt setup is where we will log all of the input, output, and interactions between the user, CLI, Hal,
+                and the specific APIs</p>
+                </span>
+                </pre>
+            </div>
+
+            <div id="pkg-lock_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/json1.svg"> package-lock.json</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>This is automatically generated for any operations where NPM modifies either the <a href="#node_setup" data-toggle="tab"><img src="../../assets/img/icons/node1.svg">node_modules</a>                tree, or <a href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg">package.json</a>.</p>
+              <p>It describes the exact tree that was generated, such that subsequent installs are able to generate identical
+                trees, regardless of intermediate dependency updates.</p>
+              </span>
+              </pre>
+            </div>
+
+            <div id="pkg_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/json1.svg"> package.json</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>This document is where we store the specific dependencies node.js will need to make Hal work.</p>
+              <p>It must be actual JSON, not just a JavaScript object literal.</p>
+              <p>For a complete document breakdown see <a href="http://browsenpm.org/package.json" target="_blank">this interactive guide</a></p>
+              </span>
+              </pre>
+            </div>
+
+            <div id="random_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/txt1.svg"> random.txt</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>This is where we will store random returns to use.</p>
+              <p>Hal will take the text inside of random.txt and then use it to call one of Hal's commands.</p>
+                  </span>
+              </pre>
+            </div>
+
+            <div id="readme_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/md1.svg"> README.md</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Our <img src="../../assets/img/icons/github1.svg">github README file for our repository is tell other people
+                why, what they can do, and how they can use Hal Bot.</p>
+              <p>In this case we're using it to store the project instructions</p>
+                  </span>
+              </pre>
+            </div>
+
+            <div id="node_setup" class="tab-pane fade">
+              <ul class="nav nav-tabs">
+                <li class="active"><a><img src="../../assets/img/icons/node1.svg"> node_modules</a></li>
+              </ul>
+              <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Where our NPM "dependencies" packages are dropped when installed under their prefix.</p>
+              <p>This is folder is created automatically by node and populated with the dependencies we specified in our
+                <a href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg">package.json</a>
+              </p>
+                  </span>
+              </pre>
+            </div>
+
+          </div>
+          <!-- /#myTabContent -->
+        </div>
+        <!-- /.col Setup Coder -->
+      </div>
+      <!-- /#setup -->
     </div>
-    <!-- /container -->
+    <!-- /.container -->
   </div>
-  <!-- /aboutwrap -->
+  <!-- /#aboutwrap -->
 
-  <!-- Seperator 1 -->
-  <div class="about center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay"></div>
+  <!-- Initialize -->
+  <div class="center-block" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <hr>
+      <a>
+        <h1>Initialize</h1>
+      </a>
+    </div>
   </div>
 
-  <!-- Seperator 3 -->
+  <!-- Initialize -->
+  <div id="initialize" class="container">
+    <div class="row equal">
+      <div class="col-md-2">
+        <h3>Using Require</h3>
+        <p>We have to use Node.js's <samp>require()</samp> method to call from <samp><img src="../../assets/img/icons/node1.svg">node_modules</samp>          the dependencies we need for Hal to work.</p>
+        <p>We're also using <samp>require()</samp> to import information from our <samp><img src="../../assets/img/icons/js1.svg">keys.js</samp>          </p>
+      </div>
+
+      <div class="col-md-4 explorer">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#hal_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js<button type="button" class="close">×</button></a></li>
+          <li><a href="#keys_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js<button type="button" class="close">×</button></a></li>
+        </ul>
+        <div id="myTabContent2" class="tab-content">
+          <!-- hal.js -->
+          <div id="hal_init" class="tab-pane active">
+            <pre class="prettyprint lang-javascript">
+  <code>
+  // Variables - require
+  var keys = require("./keys.js");
+  var fs = require("fs");
+  var request = require("request");
+  var twitter = require("twitter");
+  var spotify = require("node-spotify-api");
+  var chalk = require("chalk");
+  </code>
+              </pre>
+          </div>
+
+          <div id="keys_init" class="tab-pane">
+            <pre class="prettyprint lang-javascript">
+    <code>
+  // Twitter API keys
+  var twitterKeys = {
+    consumer_key: 'LRtKWnfkEYctrT5udepDGADyM',
+    consumer_secret: 'gv1RiB4eXd4mftJJKYnAS7BC7SrI0d7IjY9nQn8MRwRC9Q7F7G',
+    access_token_key: '2823395241-uYjfYfpdBkneGSuUD0G5xBmWrXDZKsVrFPrhGhT',
+    access_token_secret: 'RTe0Oh7TY4qMyCWocFUA5OktmbiInnE1kwwiv6OAzCYBb'
+  };
+
+  // Spotify API keys
+  var spotifyKeys = {
+    client_id: '21ff2fb0d1594b44b2759fdcdd60b77d',
+    client_secret: '4a8f6c3b93ea44b7a465ad51f2128704'
+  };
+
+  // Exports
+  module.exports = {
+    twitterKeys,
+    spotifyKeys
+  };
+    </code>
+                </pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+
+      </div>
+
+    </div>
+    <!-- /.row equal -->
+  </div>
+  <!-- /initialize -->
+
+  <br>
+
+  <!-- Hal -->
+  <div class="center-block" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <hr>
+      <a>
+        <h1>Hal</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hal Section-->
+  <section id="hal"></section>
+  <div class="container">
+
+  </div>
+  <!--/hal -->
+  <br>
+  <!-- Twitter -->
+  <div class="center-block" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <hr>
+      <a>
+        <h1>Twitter</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- Twitter Section-->
+  <section id="twitter"></section>
+  <div class="container">
+
+  </div>
+  <!-- /twitter -->
+  <br>
+  <!-- Spotify -->
+  <div class="center-block" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <hr>
+      <a>
+        <h1>Spotify</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- Spotfiy Section-->
+  <section id="twitter"></section>
+  <div class="container">
+
+  </div>
+  <!-- /spotfiy -->
+  <br>
+  <!-- OMDb -->
+  <div class="center-block" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <hr>
+      <a>
+        <h1>OMDb</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- OMDb Section-->
+  <section id="omdb"></section>
+  <div class="container">
+
+  </div>
+  <!-- /omdb -->
+  <br>
+
+  <!-- Build -->
+  <div class="center-block" data-stellar-background-ratio="0.5">
+    <div class="overlay">
+      <hr>
+      <a>
+        <h1>Build</h1>
+      </a>
+    </div>
+  </div>
+
+  <!-- Build Section-->
+  <section id="build"></section>
+  <div class="container">
+
+  </div>
+  <!-- /build -->
+  <br>
+
+  <!-- Seperator -->
   <div class="contact center-block" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
   </div>
-
 
   <!-- Contact Section -->
   <section id="contact" name="contact"></section>
@@ -147,6 +544,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autorun=true&amp;lang=css&amp;skin=desert"></script>
 
   <!-- Custom Js -->
   <script src="../../assets/js/custom.js"></script>
@@ -165,5 +563,6 @@
 
 </body>
 <!-- /body -->
+
 </html>
 <!-- /html -->

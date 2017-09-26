@@ -6,36 +6,35 @@
 * URL: www.itsokayitsofficial.io
 */
 
-
-/* Headwrap_node */
-
-#headerwrap_node {
-    background-color: #353535;
-    margin-top: 0px;
-    padding-top: 120px;
-    text-align: center;
-    background-attachment: relative;
-    background-position: center center;
-    height: 100%;
-    width: 100%;
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+h1,
+h2,
+h3,
+h4,
+ :hover {
+    text-decoration: none !important;
 }
 
-#headerwrap_node h1 {
-    color: #ffffff;
-    margin-top: 90px;
-    padding-bottom: 30px;
-    letter-spacing: 8px;
-    font-size: 100px;
-    font-weight: bold;
-    text-shadow: 2px 2px 2px #000;
+svg,
+img {
+    height: 20px;
+    width: 30px;
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle !important;
+}
+
+.overlay {
+    text-align: center;
+}
+
+
+/* Headwrap */
+
+#headerwrap {
+    background: no-repeat center top;
+    background-color: #272727 !important;
 }
 
 
@@ -44,13 +43,16 @@
 .hal {
     font-family: Courier New, Courier, monospace;
     display: inline-block;
+    float: left;
+    text-align: left;
+    width: 100%;
 }
 
-
-.hal > h3 {
+.hal h3 {
     color: red;
-    font-size: 20px;
-    font-weight: bold;
+    font-family: Courier New, Courier, monospace;
+    font-size: 20px !important;
+    font-weight: bold !important;
 }
 
 .hal-type {
@@ -59,17 +61,148 @@
 }
 
 
-/* Animation */
+/* #About */
 
-.cursor {
-    animation: blinkTextCursor infinite normal;
+#aboutwrap a {
+    text-align: center;
 }
 
-@keyframes blinkTextCursor {
-    from {
-        border-right-color: rgba(255, 255, 255, .75);
+#aboutwrap svg,
+#aboutwrap img {
+    height: 20px;
+    width: 30px;
+}
+
+#aboutwrap li {
+    display: inline-block;
+    vertical-align: middle !important;
+}
+
+#tools {
+    margin-left: -50px;
+    margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+    .row.equal {
+        display: flex;
+        flex-wrap: wrap;
     }
-    to {
-        border-right-color: transparent;
-    }
+}
+
+
+/* Explorer */
+
+pre {
+    height: 999px !important;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: -999px;
+    margin-right: -10px;
+    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.nocode,
+.nocode p {
+    display: block;
+    color: white;
+    font-family: "Lato" sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    white-space: normal !important;
+}
+
+.explorer {
+    display: block;
+    overflow: hidden;
+    background-color: #272727;
+    color: white;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.explorer button.close {
+    visibility: hidden;
+    float: right;
+    font-size: 25px;
+    font-weight: 200;
+    text-shadow: 0 0 0 white;
+    line-height: 1;
+    color: white;
+    opacity: 1;
+    padding-left: 20px;
+}
+
+.explorer ul {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.explorer p {
+    padding-left: 5px;
+}
+
+.explorer p:hover {
+    background-color: grey;
+}
+
+.explorer .nav-tabs {
+    padding: 0;
+    border: 0;
+}
+
+.explorer .nav-tabs>li.active>a {
+    color: white;
+    background-color: #333;
+    border: 1px solid #333;
+    border-bottom-color: transparent;
+}
+
+.explorer .nav-tabs>li.active>a button.close {
+    visibility: visible;
+}
+
+.explorer .nav-tabs>li>a {
+    color: rgba(255, 255, 255, 0.61);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.explorer li>a:hover {
+    background-color: grey;
+    border-color: grey;
+}
+
+.explorer li>a:hover button.close {
+    visibility: visible;
+    opacity: .5;
+}
+
+
+/* Social  */
+
+.twitter {
+    background-color: #55acee !important;
+}
+
+.spotify {
+    background-color: #00e461 !important;
+}
+
+.omdb {
+    background-color: #e95950 !important;
+}
+
+tbody,
+tbody a {
+    color: white;
+}
+
+tr:hover {
+    opacity: .7;
 }

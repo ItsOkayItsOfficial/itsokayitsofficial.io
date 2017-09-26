@@ -1,0 +1,74 @@
+var words = ['Hello.', 'This is a case study on node.js.', 'Feel free to use what you like.'];
+var type = '<a><p class="hal-type">';
+var hal = '<h3>Hal:&nbsp</h3>';
+
+// Function - Hal talk
+var halTalk = function (i) {
+	$(this).delay(100 * i).css({
+		display: 'inline',
+		opacity: 0
+	}).animate({
+		opacity: 1
+	}, 100);
+};
+
+// Function - Run hal
+var halRun = function (i) {
+	var spans = hal + '<span>' + this.split('').join('</span><span>') + '</span>';
+	$('.hal').append(type);
+	$(spans).delay(5000 * i).hide().appendTo('.hal-type').each(halTalk);
+}
+
+$(words).each(halRun);
+
+    var words = ['Hello.', 'This is a case study on node.js.', 'Feel free to use what you like.'];
+    var type = '&lta&gt&ltp class="hal-type"&gt';
+    var hal = '&lth3&gtHal:&nbsp&lt/h3&gt';
+
+    // Function - Hal talk
+    var halTalk = function (i) {
+      $(this).delay(100 * i).css({
+        display: 'inline',
+        opacity: 0
+      }).animate({
+        opacity: 1
+      }, 100);
+    };
+
+    // Function - Run hal
+    var halRun = function (i) {
+      var spans = hal + '&ltspan&gt' + this.split('').join('&lt/span&gt&ltspan&gt') + '&lt/span&gt';
+      $('.hal').append(type);
+      $(spans).delay(5000 * i).hide().appendTo('.hal-type').each(halTalk);
+    }
+
+    $(words).each(halRun);
+
+ 
+
+    <div class="col-md-8">
+      <pre class="prettyprint lang-javascript"><code>
+    var words = ['Hello.', 'This is a case study on node.js.', 'Feel free to use what you like.'];
+    var type = '&lta&gt&ltp class="hal-type"&gt';
+    var hal = '&lth3&gtHal:&nbsp&lt/h3&gt';
+
+    // Function - Hal talk
+    var halTalk = function (i) {
+      $(this).delay(100 * i).css({
+        display: 'inline',
+        opacity: 0
+      }).animate({
+        opacity: 1
+      }, 100);
+    };
+
+    // Function - Run hal
+    var halRun = function (i) {
+      var spans = hal + '&ltspan&gt' + this.split('').join('&lt/span&gt&ltspan&gt') + '&lt/span&gt';
+      $('.hal').append(type);
+      $(spans).delay(5000 * i).hide().appendTo('.hal-type').each(halTalk);
+    }
+
+    $(words).each(halRun);
+</code></pre>
+    </div>
