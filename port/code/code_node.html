@@ -11,25 +11,31 @@
 
   <title>ItsOkayItsOfficial</title>
 
+  <!-- Font AWesome CSS 4.7.0 -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
   <!-- Bootstrap CSS 3.3.7 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-  <!-- Font AWesome CSS 4.7.0 -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Prettify Loader -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autorun=true&amp;lang=css&amp;skin=desert"></script>
 
   <!-- Custom CSS -->
   <link href="../../assets/css/style.css" rel="stylesheet">
   <link href="../../assets/css/port.css" rel="stylesheet">
   <link href="../../assets/css/hover.css" rel="stylesheet">
+  <link href="../../assets/css/coder.css" rel="stylesheet">
+
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" data-target="#site-nav" data-offset="120">
 
   <!-- Sitnav -->
-  <nav class="site-nav transition">
-    <a class="nav-link smoothScroll" style="margin-right:100px" href="../../index.html">Home</a>
-    <a class="smoothScroll" href="#top"><img src="../../assets/img/logo.png" class="nav-logo"></a>
-    <a class="nav-link smoothScroll" style="margin-left:100px" href="#contact">Contact</a>
+  <nav id="site-nav" class="site-nav transition">
+    <a class="nav-link scroll" href="../../index.html">Home</a>
+    <a class="nav-link scroll" href="#overview">Overview</a>
+    <a class="scroll" href="#top"><img src="../../assets/img/logo.png" class="nav-logo"></a>
+    <a class="nav-link scroll" href="#build">Build</a>
+    <a class="nav-link scroll" href="#contact">Contact</a>
   </nav>
   <!--/sitnav -->
 
@@ -57,7 +63,7 @@
 
 
   <!-- About Section-->
-  <section id="about" name="about"></section>
+  <section id="overview"></section>
   <div id="aboutwrap">
     <div class="container">
 
@@ -174,36 +180,38 @@
       <br>
 
       <!-- Setup -->
-      <div id="setup" class="row equal">
+      <div id="setup" class="row">
         <div class="col-md-4">
           <a>
             <h2>Setup</h2>
           </a>
         </div>
 
-        <!-- Setup Explorer -->
-        <div class="col-md-2 explorer">
-          &nbsp<small>EXPLORER: hal-node-app</small>
-          <ul class="nav-tabs">
-            <p href="#git_setup" data-toggle="tab"><img src="../../assets/img/icons/git1.svg"> .gitignore</p>
-            <p href="#hal_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js</p>
-            <p href="#keys_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js</p>
-            <p href="#log_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> log.txt</p>
-            <p href="#pkg-lock_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package-lock.json</p>
-            <p href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package.json</p>
-            <p href="#random_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> random.txt</p>
-            <p href="#readme_setup" data-toggle="tab"><img src="../../assets/img/icons/md1.svg"> README.md</p>
-            <p href="#node_setup" data-toggle="tab"><img src="../../assets/img/icons/node1.svg"> node_modules</p>
+        <!-- Coder Sidebar -->
+        <div class="col-md-2 coder">
+          <div class="header">&nbsp<small>EXPLORER: hal-node-app</small></div>
+          <ul class="sidebar nav">
+            <li><a href="#git_setup" data-toggle="tab"><img src="../../assets/img/icons/git1.svg"> .gitignore</a></li>
+            <li><a href="#hal_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js</a></li>
+            <li><a href="#keys_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> key.js</a></li>
+            <li><a href="#log_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> log.txt</a></li>
+            <li><a href="#pkg-lock_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package-lock.json</a></li>
+            <li><a href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package.json</a></li>
+            <li><a href="#random_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> random.txt</a></li>
+            <li><a href="#readme_setup" data-toggle="tab"><img src="../../assets/img/icons/md1.svg"> README.md</a></li>
+            <li><a href="#node_setup" data-toggle="tab"><img src="../../assets/img/icons/node1.svg"> node_modules</a></li>
           </ul>
+          <br>
+          <br>
         </div>
-        <!-- /#explorer -->
+        <!-- /Sidebar -->
 
         <!-- Setup Coder -->
-        <div class="col-md-5 explorer">
-          <div id="myTabContent" class="tab-content">
+        <div class="col-md-5 coder">
+          <div class="tab-content">
 
             <div id="git_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/git1.svg"> .gitignore</a></li>
               </ul>
               <pre class="prettyprint">
@@ -215,7 +223,7 @@
             </div>
 
             <div id="hal_setup" class="tab-pane fade active in">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/js1.svg"> hal.js</a></li>
               </ul>
               <pre class="prettyprint">
@@ -227,7 +235,7 @@
             </div>
 
             <div id="keys_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/js1.svg"> keys.js</a></li>
               </ul>
               <pre class="prettyprint">
@@ -241,7 +249,7 @@
             </div>
 
             <div id="log_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/txt1.svg"> log.txt</a></li>
               </ul>
               <pre class="prettyprint">
@@ -253,7 +261,7 @@
             </div>
 
             <div id="pkg-lock_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/json1.svg"> package-lock.json</a></li>
               </ul>
               <pre class="prettyprint">
@@ -266,7 +274,7 @@
             </div>
 
             <div id="pkg_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/json1.svg"> package.json</a></li>
               </ul>
               <pre class="prettyprint">
@@ -279,7 +287,7 @@
             </div>
 
             <div id="random_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/txt1.svg"> random.txt</a></li>
               </ul>
               <pre class="prettyprint">
@@ -291,7 +299,7 @@
             </div>
 
             <div id="readme_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/md1.svg"> README.md</a></li>
               </ul>
               <pre class="prettyprint">
@@ -304,7 +312,7 @@
             </div>
 
             <div id="node_setup" class="tab-pane fade">
-              <ul class="nav nav-tabs">
+              <ul class="tabs nav">
                 <li class="active"><a><img src="../../assets/img/icons/node1.svg"> node_modules</a></li>
               </ul>
               <pre class="prettyprint">
@@ -328,34 +336,39 @@
   </div>
   <!-- /#aboutwrap -->
 
-  <!-- Initialize -->
-  <div class="center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay">
-      <hr>
-      <a>
-        <h1>Initialize</h1>
-      </a>
-    </div>
-  </div>
 
-  <!-- Initialize -->
-  <div id="initialize" class="container">
-    <div class="row equal">
-      <div class="col-md-2">
-        <h3>Using Require</h3>
-        <p>We have to use Node.js's <samp>require()</samp> method to call from <samp><img src="../../assets/img/icons/node1.svg">node_modules</samp>          the dependencies we need for Hal to work.</p>
-        <p>We're also using <samp>require()</samp> to import information from our <samp><img src="../../assets/img/icons/js1.svg">keys.js</samp>          </p>
-      </div>
+  <div id='productCarousel' class='carousel slide' data-ride='carousel'>
+    <ol class='carousel-indicators'>
+      <li data-target='#productCarousel' data-slide-to='0' class='active'></li>
+      <li data-target='#productCarousel' data-slide-to='1'></li>
+      <li data-target='#productCarousel' data-slide-to='2'></li>
+      <li data-target='#productCarousel' data-slide-to='3'></li>
+    </ol>
 
-      <div class="col-md-4 explorer">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#hal_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js<button type="button" class="close">×</button></a></li>
-          <li><a href="#keys_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js<button type="button" class="close">×</button></a></li>
-        </ul>
-        <div id="myTabContent2" class="tab-content">
-          <!-- hal.js -->
-          <div id="hal_init" class="tab-pane active">
-            <pre class="prettyprint lang-javascript">
+    <div class='carousel-inner'>
+      <!-- Initialize Section -->
+      <div class='item active'>
+        <hr>
+        <a>
+          <h1>Initialize</h1>
+        </a>
+        <hr>
+        <div class="col-md-2">
+          <h3>Using Require</h3>
+          <p>We have to use Node.js's <samp>require()</samp> method to call from <samp><img src="../../assets/img/icons/node1.svg">node_modules</samp>            the dependencies we need for Hal to work.</p>
+          <p>We're also using <samp>require()</samp> to import information from our <samp><img src="../../assets/img/icons/js1.svg">keys.js</samp>            </p>
+        </div>
+
+        <div class="col-md-4 coder">
+          <ul class="tabs nav">
+            <li class="active"><a href="#hal_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js<button type="button" class="close">×</button></a></li>
+            <li><a href="#keys_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js<button type="button" class="close">×</button></a></li>
+          </ul>
+
+          <div class="tab-content">
+            <!-- hal.js -->
+            <div id="hal_init" class="tab-pane active">
+              <pre class="prettyprint lang-javascript">
   <code>
   // Variables - require
   var keys = require("./keys.js");
@@ -366,10 +379,10 @@
   var chalk = require("chalk");
   </code>
               </pre>
-          </div>
+            </div>
 
-          <div id="keys_init" class="tab-pane">
-            <pre class="prettyprint lang-javascript">
+            <div id="keys_init" class="tab-pane">
+              <pre class="prettyprint lang-javascript">
     <code>
   // Twitter API keys
   var twitterKeys = {
@@ -392,110 +405,122 @@
   };
     </code>
                 </pre>
+            </div>
           </div>
         </div>
+
+        <div class="col-md-6">
+        </div>
       </div>
+      <!-- /initialize -->
 
-      <div class="col-md-6">
-
+      <div class='item'>
+        <img src='http://placehold.it/800x400'>
       </div>
-
+      <div class='item'>
+        <img src='http://placehold.it/800x400'>
+      </div>
+      <div class='item'>
+        <img src='http://placehold.it/800x400'>
+      </div>
     </div>
-    <!-- /.row equal -->
+
+    <a class='left carousel-control' href='#productCarousel' role='button' data-slide='prev'>
+<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+<span class='sr-only'>Previous</span>
+</a>
+    <a class='right carousel-control' href='#productCarousel' role='button' data-slide='next'>
+<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+<span class='sr-only'>Next</span>
+</a>
+
   </div>
-  <!-- /initialize -->
+  <!-- /carousel -->
 
   <br>
 
-  <!-- Hal -->
-  <div class="center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay">
-      <hr>
-      <a>
-        <h1>Hal</h1>
-      </a>
-    </div>
-  </div>
-
   <!-- Hal Section-->
   <section id="hal"></section>
+  <div class="center-block">
+    <hr>
+    <a>
+      <h1>Hal</h1>
+    </a>
+  </div>
+  </div>
   <div class="container">
 
   </div>
   <!--/hal -->
+
   <br>
-  <!-- Twitter -->
-  <div class="center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay">
-      <hr>
-      <a>
-        <h1>Twitter</h1>
-      </a>
-    </div>
-  </div>
 
   <!-- Twitter Section-->
   <section id="twitter"></section>
+  <div class="center-block">
+    <hr>
+    <a>
+      <h1>Twitter</h1>
+    </a>
+  </div>
+  </div>
   <div class="container">
 
   </div>
   <!-- /twitter -->
+
   <br>
-  <!-- Spotify -->
-  <div class="center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay">
-      <hr>
-      <a>
-        <h1>Spotify</h1>
-      </a>
-    </div>
-  </div>
 
   <!-- Spotfiy Section-->
-  <section id="twitter"></section>
+  <section id="spotify"></section>
+  <div class="center-block">
+    <hr>
+    <a>
+      <h1>Spotify</h1>
+    </a>
+  </div>
+  </div>
   <div class="container">
 
   </div>
   <!-- /spotfiy -->
+
   <br>
-  <!-- OMDb -->
-  <div class="center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay">
-      <hr>
-      <a>
-        <h1>OMDb</h1>
-      </a>
-    </div>
-  </div>
 
   <!-- OMDb Section-->
   <section id="omdb"></section>
+  <div class="center-block">
+    <hr>
+    <a>
+      <h1>OMDb</h1>
+    </a>
+  </div>
+  </div>
   <div class="container">
 
   </div>
   <!-- /omdb -->
-  <br>
 
-  <!-- Build -->
-  <div class="center-block" data-stellar-background-ratio="0.5">
-    <div class="overlay">
-      <hr>
-      <a>
-        <h1>Build</h1>
-      </a>
-    </div>
-  </div>
+  <br>
 
   <!-- Build Section-->
   <section id="build"></section>
+  <div class="center-block">
+    <hr>
+    <a>
+      <h1>Build</h1>
+    </a>
+  </div>
+  </div>
   <div class="container">
 
   </div>
   <!-- /build -->
+
   <br>
 
   <!-- Seperator -->
-  <div class="contact center-block" data-stellar-background-ratio="0.5">
+  <div class="contact center-block">
     <div class="overlay"></div>
   </div>
 
@@ -541,25 +566,12 @@
 
 
   <!-- jQuery & Bootstrap Js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
-  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autorun=true&amp;lang=css&amp;skin=desert"></script>
 
   <!-- Custom Js -->
   <script src="../../assets/js/custom.js"></script>
   <script src="../../assets/js/classie.js"></script>
-  <script src="../../assets/js/smoothscroll.js"></script>
-
-  <!--  Onbaord Scripts -->
-  <script type="text/javascript">
-    $(function () {
-      $.stellar({
-        horizontalScrolling: false,
-        verticalOffset: 40
-      });
-    });
-  </script>
 
 </body>
 <!-- /body -->

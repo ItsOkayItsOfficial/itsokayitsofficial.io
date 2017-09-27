@@ -22,15 +22,15 @@
   <link href="assets/css/hover.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll">
+<body data-spy="scroll" data-target="#site-nav" data-offset="120">
 
   <!-- Sitnav -->
-  <nav class="site-nav transition">
-    <a class="nav-link smoothScroll" href="#about">About</a>
-    <a class="nav-link smoothScroll" href="#services">Services</a>
-    <a class="smoothScroll" href="#home"><img src="assets/img/logo.png" class="logo"></a>
-    <a class="nav-link smoothScroll" href="#projects">Projects</a>
-    <a class="nav-link smoothScroll" href="#contact">Contact</a>
+  <nav id="site-nav" class="site-nav transition">
+    <a class="nav-link scroll" href="#about">About</a>
+    <a class="nav-link scroll" href="#services">Services</a>
+    <a class="scroll" href="#home"><img src="assets/img/logo.png" class="logo"></a>
+    <a class="nav-link scroll" href="#projects">Projects</a>
+    <a class="nav-link scroll" href="#contact">Contact</a>
   </nav>
   <!--/sitnav -->
 
@@ -143,7 +143,6 @@
     <div class="overlay"></div>
   </div>
 
-
   <!-- Projects Section -->
   <section id="projects" name="projects"></section>
   <div id="portfoliowrap">
@@ -250,24 +249,13 @@
 
 
   <!-- jQuery & Bootstrap Js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js"></script>
 
   <!-- Custom Js -->
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/classie.js"></script>
-  <script src="assets/js/smoothscroll.js"></script>
 
-  <!--  Onbaord Scripts -->
-  <script type="text/javascript">
-    $(function () {
-      $.stellar({
-        horizontalScrolling: false,
-        verticalOffset: 40
-      });
-    });
-  </script>
 
 </body>
 <!-- /body -->

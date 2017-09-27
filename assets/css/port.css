@@ -61,128 +61,12 @@ li {
 }
 
 
-/* #About */
-
-#aboutwrap a {
-    text-align: center;
-}
-
-#aboutwrap svg,
-#aboutwrap img {
-    height: 20px;
-    width: 30px;
-}
-
-#aboutwrap li {
-    display: inline-block;
-    vertical-align: middle !important;
-}
+/* #Tools */
 
 #tools {
     margin-left: -50px;
     margin-top: 30px;
 }
-
-@media (min-width: 768px) {
-    .row.equal {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-
-/* Explorer */
-
-pre {
-    height: 999px !important;
-    border: 0;
-    border-radius: 0;
-    margin-bottom: -999px;
-    margin-right: -10px;
-    -webkit-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
-    box-shadow: inset 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
-}
-
-.nocode,
-.nocode p {
-    display: block;
-    color: white;
-    font-family: "Lato" sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-    white-space: normal !important;
-}
-
-.explorer {
-    display: block;
-    overflow: hidden;
-    background-color: #272727;
-    color: white;
-    padding: 0;
-    margin-left: 10px;
-}
-
-.explorer button.close {
-    visibility: hidden;
-    float: right;
-    font-size: 25px;
-    font-weight: 200;
-    text-shadow: 0 0 0 white;
-    line-height: 1;
-    color: white;
-    opacity: 1;
-    padding-left: 20px;
-}
-
-.explorer ul {
-    padding: 5px 0;
-    margin: 0;
-}
-
-.explorer p {
-    padding-left: 5px;
-}
-
-.explorer p:hover {
-    background-color: grey;
-}
-
-.explorer .nav-tabs {
-    padding: 0;
-    border: 0;
-}
-
-.explorer .nav-tabs>li.active>a {
-    color: white;
-    background-color: #333;
-    border: 1px solid #333;
-    border-bottom-color: transparent;
-}
-
-.explorer .nav-tabs>li.active>a button.close {
-    visibility: visible;
-}
-
-.explorer .nav-tabs>li>a {
-    color: rgba(255, 255, 255, 0.61);
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-.explorer li>a:hover {
-    background-color: grey;
-    border-color: grey;
-}
-
-.explorer li>a:hover button.close {
-    visibility: visible;
-    opacity: .5;
-}
-
 
 /* Social  */
 

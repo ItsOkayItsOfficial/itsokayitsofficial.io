@@ -20,6 +20,7 @@ $(window).scroll(function () {
 	};
 });
 
+
 // Scroll Animation
 $('.scroll').on('click', function (event) {
 	event.preventDefault()
