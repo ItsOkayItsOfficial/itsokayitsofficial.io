@@ -22,11 +22,6 @@ img {
 
 li {
     display: inline-block;
-    vertical-align: middle !important;
-}
-
-.overlay {
-    text-align: center;
 }
 
 
