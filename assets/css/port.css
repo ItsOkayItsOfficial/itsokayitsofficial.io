@@ -63,6 +63,7 @@ li {
     margin-top: 30px;
 }
 
+
 /* Social  */
 
 .twitter {
@@ -84,4 +85,21 @@ tbody a {
 
 tr:hover {
     opacity: .7;
+}
+
+.carousel,
+.item,
+.slide,
+.carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-control.r {
+    right: 0;
+    left: auto;
+}
+
+.carousel-control.l {
+    float: left;
 }

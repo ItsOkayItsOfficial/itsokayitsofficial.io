@@ -169,6 +169,11 @@ Sitenav
 Wrap Sections
 =============================================*/
 
+.wrap {
+	height: 100vh;
+	width: 100vh;
+}
+
 
 /* Head Wrap */
 
