@@ -82,8 +82,9 @@ $(document).on('click', '.theme', function loadScript() {
 	var script = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=" + skin;
 	console.log(script);
 	$('pre').removeClass('prettyprinted').find('span').contents().unwrap();
-    $.ajax({
+	$.ajax({
 		url: script,
 		dataType: 'script',
-		async: false});
+		async: false
 	});
+});

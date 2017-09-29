@@ -337,24 +337,45 @@
   <!-- /#aboutwrap -->
 
   <section id="build"></section>
-  <div id="servicewrap" class="wrap">
-    <div id='productCarousel' class='carousel slide'>
+  <div id="buildwrap" class="wrap">
+
+    <div id='myCarousel' class='carousel slide'>
+      <a>
+        <h1>Workflow</h1>
+      </a>
+      <hr>
+      <ul class="carousel-indicators">
+        <a class="carousel-control l" href='#myCarousel' role='button' data-slide='prev'><span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span></a>
+        <li data-target="#myCarousel" data-slide-to="1" class="active">
+          <h2>Initialize</h2>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="2">
+          <h2>Hal</h2>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="3">
+          <h2>Twitter</h2>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="4">
+          <h2>Spotify</h2>
+        </li>
+        <li data-target="#myCarousel" data-slide-to="5">
+          <h2>OMDb</h2>
+        </li>
+        <a class="carousel-control r" href='#myCarousel' role='button' data-slide='next'><span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span></a>
+      </ul>
+      <hr>
       <div class='carousel-inner'>
 
         <!-- Initialize Section -->
         <div class='item active'>
-          <hr>
-          <a>
-            <h1>Initialize</h1>
-          </a>
-          <hr>
-          <div class="col-md-2">
+
+          <div class="col-md-4">
             <h3>Using Require</h3>
             <p>We have to use Node.js's <samp>require()</samp> method to call from <samp><img src="../../assets/img/icons/node1.svg">node_modules</samp>              the dependencies we need for Hal to work.</p>
             <p>We're also using <samp>require()</samp> to import information from our <samp><img src="../../assets/img/icons/js1.svg">keys.js</samp>              </p>
           </div>
 
-          <div class="col-md-4 coder">
+          <div class="col-md-6 coder">
             <ul class="tabs nav">
               <li class="active"><a href="#hal_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js<button type="button" class="close">×</button></a></li>
               <li><a href="#keys_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js<button type="button" class="close">×</button></a></li>
@@ -412,12 +433,6 @@
         <!-- Hal Section-->
         <div class='item'>
           <section id="hal"></section>
-          <div class="center-block">
-            <hr>
-            <a>
-              <h1>Hal</h1>
-            </a>
-          </div>
           <div class="container">
 
           </div>
@@ -427,12 +442,6 @@
         <!-- Twitter Section-->
         <div class='item'>
           <section id="twitter"></section>
-          <div class="center-block">
-            <hr>
-            <a>
-              <h1>Twitter</h1>
-            </a>
-          </div>
           <div class="container">
 
           </div>
@@ -442,12 +451,6 @@
         <!-- Spotfiy Section-->
         <div class='item'>
           <section id="spotify"></section>
-          <div class="center-block">
-            <hr>
-            <a>
-              <h1>Spotify</h1>
-            </a>
-          </div>
           <div class="container">
 
           </div>
@@ -457,12 +460,6 @@
         <!-- OMDb Section-->
         <div class='item'>
           <section id="omdb"></section>
-          <div class="center-block">
-            <hr>
-            <a>
-              <h1>OMDb</h1>
-            </a>
-          </div>
           <div class="container">
 
           </div>
@@ -472,12 +469,6 @@
         <!-- Build Section-->
         <div class='item'>
           <section id="build"></section>
-          <div class="center-block">
-            <hr>
-            <a>
-              <h1>Build</h1>
-            </a>
-          </div>
           <div class="container">
 
           </div>
@@ -485,14 +476,6 @@
         <!-- /build -->
 
       </div>
-
-      <a class="carousel-control l" href='#productCarousel' role='button' data-slide='prev'>
-<span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
-</a>
-      <a class="carousel-control r" href='#productCarousel' role='button' data-slide='next'>
-<span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
-</a>
-
     </div>
     <!-- /carousel -->
   </div>
