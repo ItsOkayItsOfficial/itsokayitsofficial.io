@@ -1,2 +1,2 @@
-# ioio_portfolio
-Portfolio site repository
+# ItsOkayItsOfficial.io Portfolio
+Repository for professional portfolio site
