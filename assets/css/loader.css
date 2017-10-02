@@ -1,0 +1,178 @@
+/*
+* Author: Alex P
+* URL: www.itsokayitsofficial.io
+*
+* Project Name: Minimal Portfolio - Page Loader
+* Version: 1.0
+* Date: 10/02/2017
+* URL: github.com/itsokayitsofficial/itsokayitsofficial.io branch port_min
+*/
+
+
+/*==================
+Base Styles
+==================*/
+
+body {
+    text-align: center;
+    height: 100%;
+    display: table;
+    width: 100%
+}
+
+.block {
+    display: table-cell;
+    vertical-align: middle
+}
+
+
+/*==================
+Page Loader
+==================*/
+
+.loader {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: block;
+    height: 30px;
+    width: 30px;
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 50%;
+}
+
+.loader>span {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+}
+
+.left {
+    left: 0
+}
+
+.right {
+    left: 50%
+}
+
+.anim {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 999px;
+    background: none repeat scroll 0 0 #508EC3;
+    transform-origin: 0 50% 0;
+    animation: loader-rotate-left 3s infinite;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    -webkit-transform-origin: 0 50% 0;
+    -webkit-animation: loader-rotate-left 3s infinite;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+}
+
+.left .anim {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.right .anim {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    left: -100%;
+    transform-origin: 100% 50% 0;
+    animation-name: loader-rotate-right;
+    animation-delay: 0;
+    animation-delay: 1.5s;
+    -webkit-transform-origin: 100% 50% 0;
+    -webkit-animation-name: loader-rotate-right;
+    -webkit-animation-delay: 0;
+    -webkit-animation-delay: 1.5s;
+}
+
+@keyframes loader-rotate-right {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(180deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    75% {
+        transform: rotate(360deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes loader-rotate-left {
+    0% {
+        transform: rotate(0deg)
+    }
+    25% {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    75% {
+        transform: rotate(180deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes loader-rotate-right {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform: rotate(180deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg)
+    }
+    75% {
+        -webkit-transform: rotate(360deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes loader-rotate-left {
+    0% {
+        -webkit-transform: rotate(0deg)
+    }
+    25% {
+        -webkit-transform: rotate(0deg)
+    }
+    50% {
+        -webkit-transform: rotate(180deg)
+    }
+    75% {
+        -webkit-transform: rotate(180deg)
+    }
+    100% {
+        -webkit-transform: rotate(360deg)
+    }
+}

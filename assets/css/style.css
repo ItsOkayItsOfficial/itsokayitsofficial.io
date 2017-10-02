@@ -2,83 +2,188 @@
 * Author: Alex P
 * URL: www.itsokayitsofficial.io
 *
-* Project Name: ItsOkayItsOfficial
+* Project Name: Minimal Portfolio
 * Version: 1.0
-* Date: 08-01-2017
-* URL: www.itsokayitsofficial.io
+* Date: 10/02/2017
+* URL: github.com/itsokayitsofficial/itsokayitsofficial.io branch port_min
 */
 
 
-/*=============================================
-Base Styles & Fonts Import
-=============================================*/
-
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-
-html,
-button,
-input,
-select,
-textarea {
-	color: #000;
-}
-
-::-moz-selection {
-	background: #f2c2c9;
-	color: #a4003a;
-	text-shadow: none;
-}
-
-::selection {
-	background: #16a085;
-	color: #a4003a;
-	text-shadow: none;
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0;
-}
-
-.centered {
-	text-align: center
-}
-
-
-/*=============================================
-General Styles
-=============================================*/
+/*==================
+Base & Imports
+====================*/
 
 html,
 body {
-	position: relative;
 	height: 100%;
-	font-weight: 400;
-	font-size: 16px;
-	color: #000;
-	-webkit-font-smoothing: antialiased;
-	-webkit-overflow-scrolling: touch;
+	width: 100%;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: "Oswald", sans-serif;
-	font-weight: 300;
+h3 {}
+
+hr p ul li section nav .navbar .navbar_top .loop .wrapper .container .navbar_top .col-8 .col-6 .col-4 .col-2 .portrait .footer
+/*==================
+Page Loader
+==================*/
+
+.loader {
+	position: relative;
+	display: inline-block;
+	height: 46px;
+	width: 46px;
+	margin: 1em;
+	border-radius: 50%;
+	background: none repeat scroll 0 0 #DDDDDD;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset, 0 0 25px rgba(0, 0, 255, 0.075);
+}
+
+.loader:after {
+	content: "";
+	position: absolute;
+	top: 9px;
+	left: 9px;
+	display: block;
+	height: 28px;
+	width: 28px;
+	background: none repeat scroll 0 0 #F2F2F2;
+	border-radius: 50%;
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.loader>span {
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	overflow: hidden;
+}
+
+.left {
+	left: 0;
+}
+
+.right {
+	left: 50%;
+}
+
+.anim {
+	position: absolute;
+	left: 100%;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	border-radius: 999px;
+	background: none repeat scroll 0 0 #508EC3;
+	opacity: 0.8;
+	-webkit-animation: ui-spinner-rotate-left 3s infinite;
+	animation: ui-spinner-rotate-left 3s infinite;
+	-webkit-transform-origin: 0 50% 0;
+	transform-origin: 0 50% 0;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-timing-function: linear;
+	animation-delay: 0s;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+}
+
+.left .anim {
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+.right .anim {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	left: -100%;
+	-webkit-transform-origin: 100% 50% 0;
+	transform-origin: 100% 50% 0;
+	-webkit-animation-name: ui-spinner-rotate-right;
+	-webkit-animation-delay: 0;
+	-webkit-animation-delay: 1.5s;
+	animation-name: ui-spinner-rotate-right;
+	animation-delay: 0;
+	animation-delay: 1.5s;
+}
+
+@keyframes ui-spinner-rotate-right {
+	0% {
+		transform: rotate(0deg)
+	}
+	25% {
+		transform: rotate(180deg)
+	}
+	50% {
+		transform: rotate(180deg)
+	}
+	75% {
+		transform: rotate(360deg)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+@keyframes ui-spinner-rotate-left {
+	0% {
+		transform: rotate(0deg)
+	}
+	25% {
+		transform: rotate(0deg)
+	}
+	50% {
+		transform: rotate(180deg)
+	}
+	75% {
+		transform: rotate(180deg)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+@-webkit-keyframes ui-spinner-rotate-right {
+	0% {
+		-webkit-transform: rotate(0deg)
+	}
+	25% {
+		-webkit-transform: rotate(180deg)
+	}
+	50% {
+		-webkit-transform: rotate(180deg)
+	}
+	75% {
+		-webkit-transform: rotate(360deg)
+	}
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
+}
+
+@-webkit-keyframes ui-spinner-rotate-left {
+	0% {
+		-webkit-transform: rotate(0deg)
+	}
+	25% {
+		-webkit-transform: rotate(0deg)
+	}
+	50% {
+		-webkit-transform: rotate(180deg)
+	}
+	75% {
+		-webkit-transform: rotate(180deg)
+	}
+	100% {
+		-webkit-transform: rotate(360deg)
+	}
 }
 
 
-/*=============================================
-Sitenav
-=============================================*/
+/*==================
+Nav
+====================*/
 
 .site-nav {
 	position: fixed;
@@ -163,257 +268,4 @@ Sitenav
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
-}
-
-
-/*=============================================
-Wrap Sections
-=============================================*/
-
-.wrap {
-	height: 100vh;
-	width: 100vh;
-}
-
-
-/* Head Wrap */
-
-#headerwrap {
-	background: url(../img/header_bg.png) no-repeat center top;
-	margin-top: 0px;
-	padding-top: 120px;
-	text-align: center;
-	background-attachment: relative;
-	background-position: center center;
-	height: 100%;
-	width: 100%;
-	-webkit-background-size: 100%;
-	-moz-background-size: 100%;
-	-o-background-size: 100%;
-	background-size: 100%;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
-#headerwrap h1 {
-	color: #ffffff;
-	margin-top: 90px;
-	padding-bottom: 30px;
-	letter-spacing: 8px;
-	font-size: 100px;
-	font-weight: bold;
-	text-shadow: 2px 2px 2px #000;
-}
-
-
-/* About Wrap */
-
-#aboutwrap {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-.name {
-	text-align: center;
-}
-
-.name p {
-	font-size: 22px;
-	font-weight: lighter;
-	margin-top: 15px;
-	letter-spacing: 2px;
-}
-
-.name-zig {
-	width: 73px;
-	height: 17px;
-	margin: 38px 0 38px;
-	background: url(../img/name-zig.png) 0 0 no-repeat;
-	background-size: 73px 17px;
-}
-
-.name-desc h2 {
-	font-size: 40px;
-	line-height: 1.45;
-	font-weight: 300;
-}
-
-
-/* Service Wrap */
-
-#servicewrap {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-}
-
-#servicewrap h1 {
-	font-weight: 300;
-	text-align: center;
-	margin-bottom: 20px;
-}
-
-.service {
-	text-align: left;
-}
-
-.service small {
-	font-size: 12px;
-	font-weight: bold
-}
-
-.service i {
-	float: left;
-	margin-right: 15px;
-	font-size: 30px;
-	vertical-align: middle;
-}
-
-.service .text {
-	color: #767676
-}
-
-
-/* Portfolio Wrap */
-
-#portfoliowrap {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-	text-align: center;
-}
-
-#portfoliowrap h1 {
-	font-weight: 300;
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.mt {
-	margin-top: 50px;
-}
-
-.mb {
-	margin-bottom: 60px;
-}
-
-#portfoliowrap i {
-	font-size: 50px;
-}
-
-
-/* Testimonials Wrap */
-
-#testimonials {
-	display: block;
-	margin-top: 80px;
-	margin-bottom: 80px;
-	background-color: #f3f3f3;
-}
-
-
-/* Contact Wrap */
-
-#contactwrap {
-	background-color: #2f2f2f;
-	margin-top: 0px;
-	padding-top: 50px;
-	padding-bottom: 30px;
-}
-
-#contactwrap p {
-	color: #f2f2f2;
-}
-
-#contactwrap small {
-	font-size: 13px;
-}
-
-#contactwrap label {
-	color: #f2f2f2;
-	margin-top: 10px;
-}
-
-
-/*=============================================
-Plax
-=============================================*/
-
-.about {
-	background-image: url(../img/divider1.png);
-	background-attachment: fixed;
-	background-size: 90%;
-	background-repeat: no-repeat;
-	height: 300px;
-	background-position: right;
-}
-
-.portfolio {
-	background-image: url(../img/divider2.png);
-	background-attachment: fixed;
-	background-size: 90%;
-	background-repeat: no-repeat;
-	height: 300px;
-	background-position: left;
-}
-
-.contact {
-	background-image: url(../img/divider3.png);
-	background-attachment: fixed;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	height: 300px;
-}
-
-
-/*=============================================
-Footer
-=============================================*/
-
-.links {
-	margin: 0;
-	list-style: none;
-	padding-left: 0;
-}
-
-.links li {
-	display: inline;
-	padding: 0 10px;
-}
-
-
-/* Social buttons */
-
-.social:hover {
-	-webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-o-transform: scale(1.1);
-}
-
-.social {
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	-o-transform: scale(0.8);
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	-o-transition-duration: 0.5s;
-}
-
-#social-li:hover {
-	color: #007bb5;
-}
-
-#social-tw:hover {
-	color: #4099FF;
-}
-
-#social-gh:hover {
-	color: #d34836;
-}
-
-#social-em:hover {
-	color: #f39c12;
 }
