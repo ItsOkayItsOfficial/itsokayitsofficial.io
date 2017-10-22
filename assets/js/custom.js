@@ -9,7 +9,7 @@
  */
 
 
-// Nav Animation
+//== Nav Animation ==//
 $(window).scroll(function () {
 	if ($(window).scrollTop() > 200) {
 		$('.site-nav').addClass('show');
@@ -21,18 +21,17 @@ $(window).scroll(function () {
 });
 
 
-// Scroll Animation
+//== Scroll Animation ==//
 $('.scroll').on('click', function (event) {
 	event.preventDefault()
 
 	$('html, body').animate({
 		scrollTop: $(this.hash).offset().top
-	}, 1500);
+	}, 300);
 });
 
 
-
-// Hal Type
+//== Hal Type ==//
 
 // Variable - Hal words
 var words = ['Hello.', 'This a code hotwash for node.js.', 'Scroll down to see in full.'];
@@ -59,7 +58,8 @@ var halRun = function (i) {
 $(words).each(halRun);
 
 
-// Exit Button
+//== Exit Button ==//
+
 $(document).on('click', '.close', function () {
 	var content = $(this).parent().attr('href');
 	var del = $(this).closest('li');
@@ -75,7 +75,8 @@ $(document).on('click', '.close', function () {
 });
 
 
-// Change Coder Style
+//== Change Coder Style ==//
+
 $(document).on('click', '.theme', function loadScript() {
 	var skin = $(this).attr('name');
 	console.log(skin);

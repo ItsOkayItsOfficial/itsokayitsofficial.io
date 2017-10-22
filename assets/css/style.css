@@ -16,14 +16,92 @@ Base & Imports
 html,
 body {
 	height: 100%;
-	width: 100%;
+	overflow-x: hidden;
+	margin: -20px -20px;
 }
 
 h1,
 h2,
-h3 {}
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Oswald", sans-serif;
+	font-weight: 300;
+	color: #428BCA;
+}
 
-hr p ul li section nav .navbar .navbar_top .loop .wrapper .container .navbar_top .col-8 .col-6 .col-4 .col-2 .portrait .footer
+h1 {
+	font-size: 20px;
+}
+
+hr {
+	display: block;
+	height: 2px;
+	border: 0;
+	border-top: 1px solid #C98142;
+	padding: 0;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+}
+
+.row {
+	padding: 20px 20px;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.col-8,
+.col-6,
+.col-4,
+.col-2 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	float: left;
+}
+
+.col-10 {
+	width: 83.3333%;
+}
+
+.col-8 {
+	width: 75%;
+}
+
+.col-6 {
+	width: 50%;
+}
+
+.col-4 {
+	width: 33.3333%;
+}
+
+.col-2 {
+	width: 16.6666%;
+}
+
+ul li .portrait .footer
 /*==================
 Page Loader
 ==================*/
@@ -250,10 +328,10 @@ Nav
 	margin-right: 20px;
 	height: 75px;
 	width: 75px;
+	transition: all 0.8s ease-in-out;
 	-webkit-transition: all 0.8s ease-in-out;
 	-moz-transition: all 0.8s ease-in-out;
 	-o-transition: all 0.8s ease-in-out;
-	transition: all 0.8s ease-in-out;
 }
 
 .nav-logo:hover,
@@ -264,8 +342,8 @@ Nav
 .show {
 	top: 0px;
 	background-color: rgba(0, 0, 0, 0.8);
+	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
 }
