@@ -11,23 +11,41 @@
 
 //== Nav Animation ==//
 $(window).scroll(function () {
-	if ($(window).scrollTop() > 200) {
-		$('.site-nav').addClass('show');
-		$('.logo').addClass('nav-logo');
+	let scroll = $(window).scrollTop();
+
+	if (scroll > .5) {
+		$('.navbar').addClass('nav-top');
+		$('.nav-logo-bg').addClass('nav-logo-sm');
+		$('.a').css('opacity', '0');
 	} else {
-		$('.site-nav').removeClass('show');
-		$('.logo').removeClass('nav-logo');
-	};
+		$('.navbar').removeClass('nav-top');
+		$('.nav-logo-bg').removeClass('nav-logo-sm');
+		$('.a').css('opacity', '1');
+	}
 });
 
 
 //== Scroll Animation ==//
-$('.scroll').on('click', function (event) {
+$('a').on('click', function (event) {
 	event.preventDefault()
 
-	$('html, body').animate({
-		scrollTop: $(this.hash).offset().top
-	}, 300);
+	$('html, body').animate(
+		{scrollTop: $(this.hash).offset().top},
+		{duration: 1000, easing: 'swing'}
+	);
+});
+
+
+//== Random Icon Positions ==//
+$('.random').each(function (index, obj) {
+	var posx = (Math.random() * ($('#icons').width() - 100)).toFixed();
+	var posy = (Math.random() * ($('#skills').height() - 200)).toFixed();
+
+	$(this).css({
+		'position': 'relative',
+		'left': posx + 'px',
+		'top': posy + 'px',
+	})
 });
 
 

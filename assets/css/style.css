@@ -8,6 +8,40 @@
 * URL: github.com/itsokayitsofficial/itsokayitsofficial.io branch port_min
 */
 
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+/* Root Styling */
+
+:root {
+	/* Colors */
+	--main-blue: #003F7E;
+	--accent-blue: #428BCA;
+	--accent-orange: #C98142;
+	--accent-grey: #888;
+	/* Fonts */
+	--font-header: 'Oswald', sans-serif;
+	--font-header-bg: small-caps 30px var(--font-header);
+	--font-header-sm: small-caps 20px var(--font-header);
+	--font-text: 18px Georgia, 'Times New Roman', Times, serif;
+	/* Padding & Margins */
+	--padding: 20px 20px;
+	--padding-sm: 10px 10px;
+	--padding-bg: 30px 30px;
+	/* Basics */
+}
+
+:active,
+:focus,
+:hover {
+	text-decoration: 0;
+	outline: 0;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
 
 /*==================
 Base & Imports
@@ -15,10 +49,21 @@ Base & Imports
 
 html,
 body {
+	display: inline-block;
 	height: 100%;
-	overflow-x: hidden;
 	margin: -20px -20px;
+	padding: var(--padding);
+	width: 100%;
+	animation: all 1s ease-in-out;
+	-webkit-animation: all 1s ease-out;
+	-moz-animation: all 1s ease-out;
+	-o-animation: all 1s ease-out;
 }
+
+
+/*==================
+Fonts & Text
+====================*/
 
 h1,
 h2,
@@ -26,31 +71,63 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Oswald", sans-serif;
-	font-weight: 300;
-	color: #428BCA;
+	color: var(--accent-blue);
+	font: var(--font-header);
 }
 
 h1 {
-	font-size: 20px;
+	font: var(--font-header-bg);
+}
+
+h2 {
+	font: var(--font-header-sm);
+	color: var(--accent-orange);
 }
 
 hr {
+	border: 1px solid var(--accent-orange);
 	display: block;
-	height: 2px;
-	border: 0;
-	border-top: 1px solid #C98142;
+	height: 0;
 	padding: 0;
+	width: 75%;
+}
+
+a {
+	text-decoration: none;
 }
 
 p {
-	font-family: Arial, Helvetica, sans-serif;
+	font: var(--font-text);
+	color: var(--accent-grey);
 }
+
+video {
+	height: auto;
+	margin-top: -20px;
+	width: 100%;
+}
+
+.icon {
+	height: 50px;
+	width: 50px;
+}
+
+
+/*==================
+Containers
+==================*/
 
 section {
 	display: block;
 	height: 100%;
+	opacity: 0;
+	overflow: hidden;
+	padding-top: 20px;
 	width: 100%;
+	animation: fadeIn 1s linear forwards 3.5s;
+	-webkit-animation: fadeIn 1s linear forwards 4s;
+	-moz-animation: fadeIn 1s linear forwards 4s;
+	-o-animation: fadeIn 1s linear forwards 4s;
 }
 
 .wrapper {
@@ -60,202 +137,63 @@ section {
 
 .container {
 	height: 100%;
+	padding-top: 25px;
 	width: 100%;
 }
 
 .row {
-	padding: 20px 20px;
-	display: block;
+	display: inline-block;
 	height: 100%;
+	padding: var(--padding);
 	width: 100%;
 }
 
+.col-10,
 .col-8,
 .col-6,
 .col-4,
 .col-2 {
-	position: relative;
-	min-height: 1px;
-	padding-right: 15px;
-	padding-left: 15px;
 	float: left;
+	position: relative;
+	padding: 0px 20px;
+	min-height: 1px;
 }
 
 .col-10 {
-	width: 83.3333%;
+	width: 78.8888%;
 }
 
 .col-8 {
-	width: 75%;
+	width: 68%;
 }
 
 .col-6 {
-	width: 50%;
+	width: 45%;
 }
 
 .col-4 {
-	width: 33.3333%;
+	width: 25%;
 }
 
 .col-2 {
-	width: 16.6666%;
+	width: 11.1111%;
 }
 
-ul li .portrait .footer
-/*==================
-Page Loader
-==================*/
-
-.loader {
-	position: relative;
-	display: inline-block;
-	height: 46px;
-	width: 46px;
-	margin: 1em;
-	border-radius: 50%;
-	background: none repeat scroll 0 0 #DDDDDD;
-	overflow: hidden;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset, 0 0 25px rgba(0, 0, 255, 0.075);
+.portrait {
+	clip-path: circle(125px at center);
+	height: 250px;
+	padding-left: 25px;
+	margin-top: 130px;
 }
 
-.loader:after {
-	content: "";
-	position: absolute;
-	top: 9px;
-	left: 9px;
-	display: block;
-	height: 28px;
-	width: 28px;
-	background: none repeat scroll 0 0 #F2F2F2;
-	border-radius: 50%;
-	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
-}
-
-.loader>span {
-	position: absolute;
-	height: 100%;
-	width: 50%;
-	overflow: hidden;
-}
-
-.left {
-	left: 0;
-}
-
-.right {
-	left: 50%;
-}
-
-.anim {
-	position: absolute;
-	left: 100%;
-	top: 0;
-	height: 100%;
+footer {
+	height: 50%;
+	opacity: 0;
 	width: 100%;
-	border-radius: 999px;
-	background: none repeat scroll 0 0 #508EC3;
-	opacity: 0.8;
-	-webkit-animation: ui-spinner-rotate-left 3s infinite;
-	animation: ui-spinner-rotate-left 3s infinite;
-	-webkit-transform-origin: 0 50% 0;
-	transform-origin: 0 50% 0;
-	-webkit-animation-delay: 0s;
-	-webkit-animation-duration: 3s;
-	-webkit-animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-}
-
-.left .anim {
-	border-bottom-left-radius: 0;
-	border-top-left-radius: 0;
-}
-
-.right .anim {
-	border-bottom-right-radius: 0;
-	border-top-right-radius: 0;
-	left: -100%;
-	-webkit-transform-origin: 100% 50% 0;
-	transform-origin: 100% 50% 0;
-	-webkit-animation-name: ui-spinner-rotate-right;
-	-webkit-animation-delay: 0;
-	-webkit-animation-delay: 1.5s;
-	animation-name: ui-spinner-rotate-right;
-	animation-delay: 0;
-	animation-delay: 1.5s;
-}
-
-@keyframes ui-spinner-rotate-right {
-	0% {
-		transform: rotate(0deg)
-	}
-	25% {
-		transform: rotate(180deg)
-	}
-	50% {
-		transform: rotate(180deg)
-	}
-	75% {
-		transform: rotate(360deg)
-	}
-	100% {
-		transform: rotate(360deg)
-	}
-}
-
-@keyframes ui-spinner-rotate-left {
-	0% {
-		transform: rotate(0deg)
-	}
-	25% {
-		transform: rotate(0deg)
-	}
-	50% {
-		transform: rotate(180deg)
-	}
-	75% {
-		transform: rotate(180deg)
-	}
-	100% {
-		transform: rotate(360deg)
-	}
-}
-
-@-webkit-keyframes ui-spinner-rotate-right {
-	0% {
-		-webkit-transform: rotate(0deg)
-	}
-	25% {
-		-webkit-transform: rotate(180deg)
-	}
-	50% {
-		-webkit-transform: rotate(180deg)
-	}
-	75% {
-		-webkit-transform: rotate(360deg)
-	}
-	100% {
-		-webkit-transform: rotate(360deg)
-	}
-}
-
-@-webkit-keyframes ui-spinner-rotate-left {
-	0% {
-		-webkit-transform: rotate(0deg)
-	}
-	25% {
-		-webkit-transform: rotate(0deg)
-	}
-	50% {
-		-webkit-transform: rotate(180deg)
-	}
-	75% {
-		-webkit-transform: rotate(180deg)
-	}
-	100% {
-		-webkit-transform: rotate(360deg)
-	}
+	animation: fadeIn 1s linear forwards 3.5s;
+	-webkit-animation: fadeIn 1s linear forwards 4s;
+	-moz-animation: fadeIn 1s linear forwards 4s;
+	-o-animation: fadeIn 1s linear forwards 4s;
 }
 
 
@@ -263,87 +201,138 @@ Page Loader
 Nav
 ====================*/
 
-.site-nav {
+
+.navbar {
+	height: 50px;
 	position: fixed;
-	top: 50px;
-	left: 0;
+	margin-top: 25px;
+	text-align: center;
 	width: 100%;
 	z-index: 1;
-	text-align: center;
-	background-color: rgb(0, 0, 0, 0);
-	height: 50px;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.nav-link {
-	display: inline-block;
-	margin-right: 20px;
-	color: #fff;
-	font-weight: 300;
-	font-size: 1.3em;
-	line-height: 2px;
-	text-decoration: none;
-	text-transform: uppercase;
-	padding: .5em;
-	border-bottom: 1px solid rgba(190, 121, 13, 0.3);
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-.nav-link:hover,
-.nav-link:focus {
-	color: #be790d;
-	border-bottom: 10px solid rgba(190, 121, 13, 0.3);
-	text-decoration: none;
-	outline: 0;
-}
-
-.nav-link:active {
-	border-bottom: 10px solid rgba(190, 121, 13, 0.3);
-	text-decoration: none;
-	outline: 0;
-}
-
-.logo {
-	margin-right: 20px;
-	height: 500px;
-	width: 500px;
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
-}
-
-.logo:hover,
-.logo:focus {
-	outline: 0;
-}
-
-.nav-logo {
-	margin-right: 20px;
-	height: 75px;
-	width: 75px;
-	transition: all 0.8s ease-in-out;
-	-webkit-transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-o-transition: all 0.8s ease-in-out;
-}
-
-.nav-logo:hover,
-.nav-logo:focus {
-	outline: 0px;
-}
-
-.show {
-	top: 0px;
-	background-color: rgba(0, 0, 0, 0.8);
 	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
 	-o-transition: all 1s ease-in-out;
 }
+
+.navbar h1 {
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.navbar > a {
+	vertical-align: middle;
+}
+
+.nav-top {
+	margin-top: -25px;
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+}
+
+.nav-top h1 {
+	font-size: 20px;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.nav-link {
+	display: inline-block;
+	color: var(--accent-orange);
+	line-height: 2px;
+	margin-top: -25px;
+	opacity: 0;
+	padding: 15px;
+	animation: fadeIn .5s linear forwards 3.5s;
+	-webkit-animation: fadeIn .5s linear forwards 3.5s;
+	-moz-animation: fadeIn .5s linear forwards 3.5s;
+	-o-animation: fadeIn .5s linear forwards 3.5s;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.nav-link:hover>h1,
+.nav-link:focus>h1,
+.nav-link:active>h1 {
+	border-bottom: 3px solid var(--accent-orange);
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.nav-logo {
+	padding-top: 25px;
+	display: inline-block;
+}
+
+.nav-logo-bg {
+	height: 500px;
+	width: 500px;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+.nav-logo-sm {
+	height: 75px;
+	width: 75px;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
+
+#loader {
+	fill: none;
+	stroke: var(--main-blue);
+	stroke-miterlimit: 10;
+	stroke-width: 3px;
+	stroke-dasharray: 1000;
+	animation: load 3s linear backwards;
+	-webkit-animation: load 3s linear backwards;
+	-moz-animation: load 3s linear backwards;
+	-o-animation: load 3s linear backwards;
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+
+
+}
+
+#check {
+	fill: var(--main-blue);
+	opacity: 0;
+	animation: fadeIn .1s linear forwards 2.3s;
+	-webkit-animation: fadeIn .1s linear forwards 2.3s;
+	-moz-animation: fadeIn .1s linear forwards 2.3s;
+	-o-animation: fadeIn .1s linear forwards 2.3s;
+}
+
+@keyframes load {
+	from {
+	  stroke-dashoffset: 1000;
+	}
+	to {
+	  stroke-dashoffset: 0;
+	}
+  }
+
+  @keyframes fadeIn {
+	  from {
+		  opacity: 0;
+	  }
+	  to {
+		  opacity: 1;
+	  }
+  }
