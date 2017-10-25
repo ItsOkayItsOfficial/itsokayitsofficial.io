@@ -16,17 +16,17 @@ $(window).scroll(function () {
 	if (scroll > .5) {
 		$('.navbar').addClass('nav-top');
 		$('.nav-logo-bg').addClass('nav-logo-sm');
-		$('.a').css('opacity', '0');
+		$('#loader').css('opacity', '0');
 	} else {
 		$('.navbar').removeClass('nav-top');
 		$('.nav-logo-bg').removeClass('nav-logo-sm');
-		$('.a').css('opacity', '1');
+		$('#loader').css('opacity', '1');
 	}
 });
 
 
 //== Scroll Animation ==//
-$('a').on('click', function (event) {
+$('.nav-link, .nav-logo').on('click', function (event) {
 	event.preventDefault()
 
 	$('html, body').animate(
@@ -36,15 +36,29 @@ $('a').on('click', function (event) {
 });
 
 
-//== Random Icon Positions ==//
+//== On Click Hide ==//
+$('.ops').on('click', function (event) {
+	event.preventDefault()
+
+	$(this.hash).toggle();
+});
+
+
+//== Random Icon Positions & Floating ==//
 $('.random').each(function (index, obj) {
 	var posx = (Math.random() * ($('#icons').width() - 100)).toFixed();
 	var posy = (Math.random() * ($('#skills').height() - 200)).toFixed();
+	var begin = (Math.random() * (9 - 0)).toFixed();
 
 	$(this).css({
 		'position': 'relative',
 		'left': posx + 'px',
 		'top': posy + 'px',
+	})
+
+	$(this).children('img').css({
+		'position': 'absolute',
+		'animation-delay': '-.' + begin + 's',
 	})
 });
 

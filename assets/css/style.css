@@ -108,8 +108,19 @@ video {
 }
 
 .icon {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
 	height: 50px;
 	width: 50px;
+	animation: float 2s ease-in-out infinite;
+	-webkit-animation: float 2s ease-in-out infinite;
+	-moz-animation: float 2s ease-in-out infinite;
+	-o-animation: float 2s ease-in-out infinite;
+}
+
+.icon:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
 }
 
 
@@ -120,14 +131,9 @@ Containers
 section {
 	display: block;
 	height: 100%;
-	opacity: 0;
 	overflow: hidden;
 	padding-top: 20px;
 	width: 100%;
-	animation: fadeIn 1s linear forwards 3.5s;
-	-webkit-animation: fadeIn 1s linear forwards 4s;
-	-moz-animation: fadeIn 1s linear forwards 4s;
-	-o-animation: fadeIn 1s linear forwards 4s;
 }
 
 .wrapper {
@@ -188,19 +194,13 @@ section {
 
 footer {
 	height: 50%;
-	opacity: 0;
 	width: 100%;
-	animation: fadeIn 1s linear forwards 3.5s;
-	-webkit-animation: fadeIn 1s linear forwards 4s;
-	-moz-animation: fadeIn 1s linear forwards 4s;
-	-o-animation: fadeIn 1s linear forwards 4s;
 }
 
 
 /*==================
 Nav
 ====================*/
-
 
 .navbar {
 	height: 50px;
@@ -222,7 +222,7 @@ Nav
 	-o-transition: all .5s ease-in-out;
 }
 
-.navbar > a {
+.navbar>a {
 	vertical-align: middle;
 }
 
@@ -306,8 +306,6 @@ Nav
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
-
-
 }
 
 #check {
@@ -319,20 +317,44 @@ Nav
 	-o-animation: fadeIn .1s linear forwards 2.3s;
 }
 
+.random {
+
+}
+
+#landing {
+	opacity: 0;
+	animation: fadeIn 1s linear forwards 3.5s;
+	-webkit-animation: fadeIn 1s linear forwards 4s;
+	-moz-animation: fadeIn 1s linear forwards 4s;
+	-o-animation: fadeIn 1s linear forwards 4s;
+}
+
 @keyframes load {
 	from {
-	  stroke-dashoffset: 1000;
+		stroke-dashoffset: 1000;
 	}
 	to {
-	  stroke-dashoffset: 0;
+		stroke-dashoffset: 0;
 	}
-  }
+}
 
-  @keyframes fadeIn {
-	  from {
-		  opacity: 0;
-	  }
-	  to {
-		  opacity: 1;
-	  }
-  }
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	50% {
+		transform: translate(0px, -5px);
+	}
+	100% {
+		transform: translate(0px, 0px);
+	}
+}
