@@ -37,11 +37,13 @@ $('.nav-link, .nav-logo').on('click', function (event) {
 
 
 //== On Click Hide ==//
-$('.ops').on('click', function (event) {
+$('.ops').on('click', function(event) {
 	event.preventDefault()
 
-	$(this.hash).toggle().animate({opacity: '1';
+	var icoID = $(this.hash);
+	$('#icons').children().not(icoID).toggle();
 });
+
 
 //== On Mouseover ==//
 $('.random').on({
@@ -55,7 +57,7 @@ $('.random').on({
 
 //== Random Icon Positions & Floating ==//
 $('.random').each(function (index, obj) {
-	var posx = (Math.random() * ($('#icons').width() - 100)).toFixed();
+	var posx = (Math.random() * ($('#icons').width() - 10)).toFixed();
 	var posy = (Math.random() * ($('#skills').height() - 200)).toFixed();
 	var begin = (Math.random() * (9 - 0)).toFixed();
 

@@ -141,7 +141,6 @@ video {
 	-webkit-animation: float 2s ease-in-out infinite;
 	-moz-animation: float 2s ease-in-out infinite;
 	-o-animation: float 2s ease-in-out infinite;
-
 }
 
 .tooltip::after {
@@ -155,6 +154,7 @@ video {
 	top: 100%;
 	width: 30px;
 }
+
 
 /*==================
 Containers
@@ -355,6 +355,21 @@ Nav
 	-webkit-animation: fadeIn 1s linear forwards 4s;
 	-moz-animation: fadeIn 1s linear forwards 4s;
 	-o-animation: fadeIn 1s linear forwards 4s;
+}
+
+.ops {
+	display: inline-block;
+	padding: var(--padding);
+}
+
+.ops:hover>h2,
+.ops:focus>h2,
+.ops:active>h2 {
+	border-bottom: 3px solid var(--main-blue);
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
 }
 
 @keyframes load {
