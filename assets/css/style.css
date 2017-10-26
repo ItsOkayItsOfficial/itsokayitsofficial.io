@@ -123,6 +123,38 @@ video {
 	-webkit-filter: grayscale(0);
 }
 
+.tooltip {
+	background: #fff;
+	border: 3px solid var(--main-blue);
+	border-radius: 50%;
+	bottom: 100%;
+	height: 75px;
+	left: 50%;
+	margin: 0px 0px 20px -40px;
+	opacity: 0;
+	padding: 5px 5px;
+	position: absolute;
+	text-align: center;
+	width: 80px;
+	z-index: 1;
+	animation: float 2s ease-in-out infinite;
+	-webkit-animation: float 2s ease-in-out infinite;
+	-moz-animation: float 2s ease-in-out infinite;
+	-o-animation: float 2s ease-in-out infinite;
+
+}
+
+.tooltip::after {
+	background: url(../img/tooltip.svg) no-repeat center center;
+	background-size: 100%;
+	content: '';
+	height: 20px;
+	left: 50%;
+	margin: -2px 0 0 -15px;
+	position: absolute;
+	top: 100%;
+	width: 30px;
+}
 
 /*==================
 Containers
@@ -317,10 +349,6 @@ Nav
 	-o-animation: fadeIn .1s linear forwards 2.3s;
 }
 
-.random {
-
-}
-
 #landing {
 	opacity: 0;
 	animation: fadeIn 1s linear forwards 3.5s;
@@ -344,6 +372,15 @@ Nav
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
 	}
 }
 

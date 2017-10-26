@@ -40,9 +40,18 @@ $('.nav-link, .nav-logo').on('click', function (event) {
 $('.ops').on('click', function (event) {
 	event.preventDefault()
 
-	$(this.hash).toggle();
+	$(this.hash).toggle().animate({opacity: '1';
 });
 
+//== On Mouseover ==//
+$('.random').on({
+    mouseenter: function() {
+        $(this).children('.tooltip').animate({opacity: '1'},500)
+    },
+    mouseleave: function() {
+		$(this).children('.tooltip').animate({opacity: '0'},250)
+    }
+});
 
 //== Random Icon Positions & Floating ==//
 $('.random').each(function (index, obj) {
@@ -56,7 +65,7 @@ $('.random').each(function (index, obj) {
 		'top': posy + 'px',
 	})
 
-	$(this).children('img').css({
+	$(this).children('img', 'span').css({
 		'position': 'absolute',
 		'animation-delay': '-.' + begin + 's',
 	})
