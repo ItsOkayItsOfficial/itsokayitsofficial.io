@@ -8,9 +8,17 @@
 * URL: github.com/itsokayitsofficial/itsokayitsofficial.io branch port_min
 */
 
+
+/*==================
+Imports
+====================*/
+
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
-/* Root Styling */
+
+/*==================
+Root
+====================*/
 
 :root {
 	/* Colors */
@@ -44,7 +52,7 @@
 
 
 /*==================
-Base & Imports
+Base
 ====================*/
 
 html,
@@ -62,8 +70,17 @@ body {
 
 
 /*==================
-Fonts & Text
+Elements
 ====================*/
+
+a {
+	text-decoration: none;
+}
+
+footer {
+	height: 50%;
+	width: 100%;
+}
 
 h1,
 h2,
@@ -92,73 +109,10 @@ hr {
 	width: 75%;
 }
 
-a {
-	text-decoration: none;
-}
-
 p {
 	font: var(--font-text);
 	color: var(--accent-grey);
 }
-
-video {
-	height: auto;
-	margin-top: -20px;
-	width: 100%;
-}
-
-.icon {
-	filter: grayscale(1);
-	-webkit-filter: grayscale(1);
-	height: 50px;
-	width: 50px;
-	animation: float 2s ease-in-out infinite;
-	-webkit-animation: float 2s ease-in-out infinite;
-	-moz-animation: float 2s ease-in-out infinite;
-	-o-animation: float 2s ease-in-out infinite;
-}
-
-.icon:hover {
-	filter: grayscale(0);
-	-webkit-filter: grayscale(0);
-}
-
-.tooltip {
-	background: #fff;
-	border: 3px solid var(--main-blue);
-	border-radius: 50%;
-	bottom: 100%;
-	height: 75px;
-	left: 50%;
-	margin: 0px 0px 20px -40px;
-	opacity: 0;
-	padding: 5px 5px;
-	position: absolute;
-	text-align: center;
-	width: 80px;
-	z-index: 1;
-	animation: float 2s ease-in-out infinite;
-	-webkit-animation: float 2s ease-in-out infinite;
-	-moz-animation: float 2s ease-in-out infinite;
-	-o-animation: float 2s ease-in-out infinite;
-}
-
-.tooltip::after {
-	background: url(../img/tooltip.svg) no-repeat center center;
-	background-size: 100%;
-	content: '';
-	height: 20px;
-	left: 50%;
-	margin: -2px 0 0 -15px;
-	position: absolute;
-	top: 100%;
-	width: 30px;
-}
-
-
-/*==================
-Containers
-==================*/
 
 section {
 	display: block;
@@ -168,23 +122,16 @@ section {
 	width: 100%;
 }
 
-.wrapper {
-	height: 100%;
+video {
+	height: auto;
+	margin-top: -20px;
 	width: 100%;
 }
 
-.container {
-	height: 100%;
-	padding-top: 25px;
-	width: 100%;
-}
 
-.row {
-	display: inline-block;
-	height: 100%;
-	padding: var(--padding);
-	width: 100%;
-}
+/*==================
+Classes
+==================*/
 
 .col-10,
 .col-8,
@@ -217,22 +164,42 @@ section {
 	width: 11.1111%;
 }
 
-.portrait {
-	clip-path: circle(125px at center);
-	height: 250px;
-	padding-left: 25px;
-	margin-top: 130px;
-}
-
-footer {
-	height: 50%;
+.container {
+	height: 100%;
+	padding-top: 25px;
 	width: 100%;
 }
 
+.icon {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	height: 50px;
+	width: 50px;
+	animation: float 2s ease-in-out infinite;
+	-webkit-animation: float 2s ease-in-out infinite;
+	-moz-animation: float 2s ease-in-out infinite;
+	-o-animation: float 2s ease-in-out infinite;
+}
 
-/*==================
-Nav
-====================*/
+.icon:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
+.ops {
+	display: inline-block;
+	padding: var(--padding);
+}
+
+.ops:hover>h2,
+.ops:focus>h2,
+.ops:active>h2 {
+	border-bottom: 3px solid var(--main-blue);
+	transition: all .5s ease-in-out;
+	-webkit-transition: all .5s ease-in-out;
+	-moz-transition: all .5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+}
 
 .navbar {
 	height: 50px;
@@ -324,21 +291,61 @@ Nav
 	-o-transition: all .5s ease-in-out;
 }
 
-#loader {
-	fill: none;
-	stroke: var(--main-blue);
-	stroke-miterlimit: 10;
-	stroke-width: 3px;
-	stroke-dasharray: 1000;
-	animation: load 3s linear backwards;
-	-webkit-animation: load 3s linear backwards;
-	-moz-animation: load 3s linear backwards;
-	-o-animation: load 3s linear backwards;
-	transition: all .5s ease-in-out;
-	-webkit-transition: all .5s ease-in-out;
-	-moz-transition: all .5s ease-in-out;
-	-o-transition: all .5s ease-in-out;
+.portrait {
+	clip-path: circle(125px at center);
+	height: 250px;
+	padding-left: 25px;
+	margin-top: 130px;
 }
+
+.row {
+	display: inline-block;
+	height: 100%;
+	padding: var(--padding);
+	width: 100%;
+}
+
+.tooltip {
+	background: #fff;
+	border: 3px solid var(--main-blue);
+	border-radius: 50%;
+	bottom: 100%;
+	height: 80px;
+	left: 50%;
+	margin: 0px 0px 10px -40px;
+	opacity: 0;
+	padding: 5px 5px;
+	position: absolute;
+	text-align: center;
+	width: 80px;
+	z-index: 1;
+	animation: float 2s ease-in-out infinite;
+	-webkit-animation: float 2s ease-in-out infinite;
+	-moz-animation: float 2s ease-in-out infinite;
+	-o-animation: float 2s ease-in-out infinite;
+}
+
+/* .tooltip::after {
+	background: url(../img/tooltip.svg) no-repeat center center;
+	background-size: 100%;
+	content: '';
+	height: 20px;
+	left: 50%;
+	margin: -2px 0 0 -15px;
+	position: absolute;
+	top: 100%;
+	width: 30px;
+} */
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+}
+
+
+/*==================
+IDs
+==================*/
 
 #check {
 	fill: var(--main-blue);
@@ -357,20 +364,26 @@ Nav
 	-o-animation: fadeIn 1s linear forwards 4s;
 }
 
-.ops {
-	display: inline-block;
-	padding: var(--padding);
-}
-
-.ops:hover>h2,
-.ops:focus>h2,
-.ops:active>h2 {
-	border-bottom: 3px solid var(--main-blue);
+#loader {
+	fill: none;
+	stroke: var(--main-blue);
+	stroke-miterlimit: 10;
+	stroke-width: 3px;
+	stroke-dasharray: 1000;
+	animation: load 3s linear backwards;
+	-webkit-animation: load 3s linear backwards;
+	-moz-animation: load 3s linear backwards;
+	-o-animation: load 3s linear backwards;
 	transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
 }
+
+
+/*==================
+Keyframes
+==================*/
 
 @keyframes load {
 	from {

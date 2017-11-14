@@ -46,12 +46,12 @@ $('.ops').on('click', function(event) {
 
 
 //== On Mouseover ==//
-$('.random').on({
+$('.icon').on({
     mouseenter: function() {
-        $(this).children('.tooltip').animate({opacity: '1'},500)
+        $(this).siblings('.tooltip').animate({opacity: '1'},500)
     },
     mouseleave: function() {
-		$(this).children('.tooltip').animate({opacity: '0'},250)
+		$(this).siblings('.tooltip').animate({opacity: '0'},250)
     }
 });
 
