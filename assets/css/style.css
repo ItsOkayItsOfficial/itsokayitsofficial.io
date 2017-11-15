@@ -97,8 +97,14 @@ h1 {
 }
 
 h2 {
-	font: var(--font-header-sm);
 	color: var(--accent-orange);
+	font: var(--font-header-sm);
+}
+
+small {
+	color: var(--accent-grey);
+	font: var(--font-text);
+	font-size: 12px;
 }
 
 hr {
