@@ -196,6 +196,18 @@ Classes
 	-webkit-filter: grayscale(0);
 }
 
+.link {
+	filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	height: 50px;
+	width: 50px;
+}
+
+.link:hover {
+	filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+}
+
 .ops {
 	display: inline-block;
 	padding: var(--padding);
@@ -334,6 +346,22 @@ Classes
 	-webkit-animation: float 2s ease-in-out infinite;
 	-moz-animation: float 2s ease-in-out infinite;
 	-o-animation: float 2s ease-in-out infinite;
+}
+
+.social {
+	list-style-type: none;
+	margin: 0 70px -10px 0;
+	padding-top: 50px;
+}
+
+.social > li {
+    float: right;
+}
+
+.social > li > a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
 }
 
 /* .tooltip::after {
