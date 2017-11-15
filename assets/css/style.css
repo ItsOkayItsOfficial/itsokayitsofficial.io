@@ -41,7 +41,7 @@ Root
 :active,
 :focus,
 :hover {
-	text-decoration: 0;
+	text-decoration: none;
 	outline: 0;
 }
 
@@ -78,7 +78,9 @@ a {
 }
 
 footer {
-	height: 50%;
+	height: 70vh;
+	margin-bottom: -10px;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -202,6 +204,7 @@ Classes
 .ops:hover>h2,
 .ops:focus>h2,
 .ops:active>h2 {
+	color: white;
 	border-bottom: 3px solid var(--main-blue);
 	transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
@@ -366,6 +369,11 @@ IDs
 	-webkit-animation: fadeIn .1s linear forwards 2.3s;
 	-moz-animation: fadeIn .1s linear forwards 2.3s;
 	-o-animation: fadeIn .1s linear forwards 2.3s;
+}
+
+#contact {
+	background: url("../img/contact.gif") no-repeat;
+	background-size: cover;
 }
 
 #landing {
