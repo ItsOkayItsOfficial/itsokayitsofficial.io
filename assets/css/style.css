@@ -78,8 +78,7 @@ a {
 }
 
 footer {
-	height: 70vh;
-	margin-bottom: -10px;
+	height: 50vh;
 	overflow: hidden;
 	width: 100%;
 }
@@ -181,28 +180,28 @@ Classes
 }
 
 .effect {
-	position: center;
-	padding: 2em;
-	text-align: center;
-	float: center;
 	background: transparent;
+	float: center;
+	padding: 2em;
+	position: center;
+	text-align: center;
 }
 
 .effect figure {
-	position: center;
-	float: center;
 	background: transparent;
+	float: center;
+	position: center;
 	text-align: center;
 }
 
 .effect img {
-	margin: 0 auto;
-	overflow: hidden;
-	max-height: 150px;
-	-webkit-transition: opacity 1s, -webkit-transform 1s;
-	transition: opacity 1s, transform 1s;
-	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	margin: 0 auto;
+	max-height: 150px;
+	overflow: hidden;
+	transition: opacity 1s, transform 1s;
+	-webkit-transition: opacity 1s,-webkit-transform 1s;
 }
 
 .effect figcaption {
@@ -210,66 +209,34 @@ Classes
 	overflow: hidden;
 }
 
-.effect h2 {
-	position: relative;
-	padding: 0.5em 0;
-}
-
 .effect p {
+	background: #fff;
+	border: 3px solid var(--main-blue);
+	color: var(--accent-grey);
 	display: inline-block;
-	margin: 0 0 0.25em;
-	padding: 0.4em 1em;
-	background: rgba(0,0,0,0.8);
-	color: #fff;
-	text-transform: none;
 	font-weight: 500;
 	font-size: 75%;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	text-transform: none;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-360px,0,0);
-	transform: translate3d(-360px,0,0);
-}
-
-.effect p:first-child {
-	-webkit-transition-delay: 0.15s;
 	transition-delay: 0.15s;
-}
-
-.effect p:nth-of-type(2) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-.effect p:nth-of-type(3) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-.effect:hover p:first-child {
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-
-.effect:hover p:nth-of-type(2) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-.effect:hover p:nth-of-type(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
+	transform: translate3d(-360px,0,0);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	-webkit-transition-delay: 0.15s;
+	-webkit-transform: translate3d(-360px,0,0);
 }
 
 .effect:hover img {
 	opacity: 0.4;
-	-webkit-transform: scale3d(1.1,1.1,1);
 	transform: scale3d(1.1,1.1,1);
+	-webkit-transform: scale3d(1.1,1.1,1);
 }
 
 .effect:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .icon {
@@ -281,11 +248,21 @@ Classes
 	-webkit-animation: float 2s ease-in-out infinite;
 	-moz-animation: float 2s ease-in-out infinite;
 	-o-animation: float 2s ease-in-out infinite;
+	transition: .2s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
 }
 
 .icon:hover {
 	filter: grayscale(0);
 	-webkit-filter: grayscale(0);
+	height: 55px;
+	width: 55px;
+	transition: .2s ease-in-out;
+	-webkit-transition: .2s ease-in-out;
+	-moz-transition: .2s ease-in-out;
+	-o-transition: .2s ease-in-out;
 }
 
 .link {
@@ -494,6 +471,7 @@ IDs
 #contact {
 	background: url("../img/contact.gif") no-repeat;
 	background-size: cover;
+	background-position-y: -130px;
 }
 
 #landing {
