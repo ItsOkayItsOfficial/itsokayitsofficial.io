@@ -457,7 +457,7 @@ IDs
 }
 
 #contact {
-	/* background: url("../img/contact.gif") no-repeat; */
+	background: url("../img/contact.gif") no-repeat;
 	background-size: cover;
 	background-position-y: -130px;
 }
