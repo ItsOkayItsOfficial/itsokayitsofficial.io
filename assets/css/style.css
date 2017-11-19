@@ -433,18 +433,6 @@ Classes
     text-decoration: none;
 }
 
-/* .tooltip::after {
-	background: url(../img/tooltip.svg) no-repeat center center;
-	background-size: 100%;
-	content: '';
-	height: 20px;
-	left: 50%;
-	margin: -2px 0 0 -15px;
-	position: absolute;
-	top: 100%;
-	width: 30px;
-} */
-
 .wrapper {
 	height: 100%;
 	width: 100%;
@@ -469,7 +457,7 @@ IDs
 }
 
 #contact {
-	background: url("../img/contact.gif") no-repeat;
+	/* background: url("../img/contact.gif") no-repeat; */
 	background-size: cover;
 	background-position-y: -130px;
 }
