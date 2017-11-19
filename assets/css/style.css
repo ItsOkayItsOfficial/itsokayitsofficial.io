@@ -78,7 +78,7 @@ a {
 }
 
 footer {
-	height: 50vh;
+	height: 100vh;
 	overflow: hidden;
 	width: 100%;
 }
@@ -102,12 +102,6 @@ h2 {
 	font: var(--font-header-sm);
 }
 
-small {
-	color: var(--accent-grey);
-	font: var(--font-text);
-	font-size: 12px;
-}
-
 hr {
 	border: 1px solid var(--accent-orange);
 	display: block;
@@ -127,6 +121,12 @@ section {
 	overflow: hidden;
 	padding-top: 20px;
 	width: 100%;
+}
+
+small {
+	color: var(--accent-grey);
+	font: var(--font-text);
+	font-size: 12px;
 }
 
 video {
@@ -458,8 +458,11 @@ IDs
 
 #contact {
 	/* background: url("../img/contact.gif") no-repeat; */
-	background-size: cover;
-	background-position-y: -130px;
+	/* background-size: cover; */
+	/* background-position-y: -130px; */
+	position: relative;
+	height: 50vh;
+	margin-top: 25vh;
 }
 
 #landing {
