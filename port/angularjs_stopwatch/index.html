@@ -11,19 +11,12 @@
 
   <title>Alex P | AngularJS Stopwatch</title>
 
-  <!-- AngularJS 1.x -->
-  <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
-
-  <!-- Custom CSS -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/hover.css" rel="stylesheet">
-
 </head>
 
 <body>
 
   <!-- Sitnav -->
-  <nav id="site-nav" class="navbar">
+  <nav id="site-nav" class="navbar nav-top">
     <a class="nav-link" href="#about">
       <h1>About</h1>
     </a>
@@ -31,8 +24,8 @@
       <h1>Skills</h1>
     </a>
     <a class="nav-logo" href="#landing">
-      <svg class="nav-logo-bg" viewBox="0 0 250 250">
-        <circle id="loader" cx="125" cy="125" r="121" />
+      <svg class="nav-logo-bg nav-logo-sm" viewBox="0 0 250 250">
+        <circle id="loader" cx="125" cy="125" r="121" style="opacity: 0;"></circle>
         <polygon id="check" points="218.92 85.12 190.64 56.84 103.28 144.2 55.82 96.73 27.53 125.02 75.01 172.5 75.03 172.48 103.3 200.75 218.92 85.12"
         />
       </svg>
@@ -47,29 +40,18 @@
   <!--/sitnav -->
 
   <!-- Stopwatch -->
-  <div id="stopwatch" ng-app="stopWatchApp" ng-controller="stopWatchDemoCtrl">
+  <section id="stopwatch">
 
-    <div ng-repeat="options in stopwatches">
-      <div bb-stopwatch options="options">
-        <div class="container">
-          <div class="stopWatch">
-            {{options.elapsedTime | stopwatchTime}}
-          </div>
-          <button class="btn" ng-click="startTimer()">Start</button>
-          <button class="btn" ng-click="stopTimer()">Stop</button>
-          <button class="btn" ng-click="resetTimer()">Reset</button>
-        </div>
-      </div>
-      <div class="log" ng-repeat="log in options.log">
-        {{log/1000}} seconds
-      </div>
-    </div>
-
-  </div>
+  </section>
   <!-- /#stopwatch -->
 
   <!-- Custom Js -->
-  <script src="assets/js/app.js"></script>
+  <script src="app.js"></script>
+  <script src="../../assets/js/custom.js"></script>
+
+  <!-- Stopwatch Script -->
+  <script id="stopwatch.html" type="text/ng-template">
+  </script>
 
 </body>
 
