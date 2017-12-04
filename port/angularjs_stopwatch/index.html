@@ -11,6 +11,9 @@
 
   <title>Alex P | AngularJS Stopwatch</title>
 
+  <!-- Custom CSS -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -41,12 +44,38 @@
 
   <!-- Stopwatch -->
   <section id="stopwatch">
+    <div class="row">
 
-  </section>
-  <!-- /#stopwatch -->
+      <div ng-app="stopWatchApp" ng-controller="stopWatchDemoCtrl">
+
+        <div ng-repeat="options in stopwatches">
+          <div bb-stopwatch options="options">
+            <div class="container">
+              <div class="stopWatch numbers">
+                {{options.elapsedTime | stopwatchTime}}
+              </div>
+              <button class="btn" ng-click="startTimer()">Start</button>
+              <button class="btn" ng-click="stopTimer()">Stop</button>
+              <button class="btn" ng-click="resetTimer()">Reset</button>
+            </div>
+          </div>
+
+          <div class="log" ng-repeat="log in options.log">
+            {{log/1000}} seconds
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section> -->
+  <!-- /#stopwatch
+
+  <!-- Angular Js 1x -->
+  <script src="https://code.angularjs.org/1.2.3/angular.js"></script>
+  <script src="app.js"></script>
 
   <!-- Custom Js -->
-  <script src="app.js"></script>
   <script src="../../assets/js/custom.js"></script>
 
   <!-- Stopwatch Script -->
