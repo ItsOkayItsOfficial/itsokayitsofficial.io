@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="App" lang="en">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -20,7 +20,7 @@
 
 </head>
 
-<body ng-app="stopWatchApp">
+<body ng-app="stopWatchApp" ng-controller="stopWatchDemoCtrl">
 
   <!-- Sitnav -->
   <nav id="site-nav" class="navbar nav-top">
@@ -50,7 +50,7 @@
   <section id="stopwatch">
     <div class="row">
 
-      <div ng-controller="stopWatchDemoCtrl">
+      <div>
 
         <div ng-repeat="options in stopwatches">
           <div bb-stopwatch options="options">
@@ -72,7 +72,7 @@
       </div>
 
     </div>
-  </section> -->
+  </section>
   <!-- /#stopwatch
 
   <!-- Custom Js -->
