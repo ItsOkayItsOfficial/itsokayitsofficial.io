@@ -13,14 +13,9 @@ var stopWatchApp = angular.module('stopWatchApp', [])
   .controller('stopWatchDemoCtrl', ['$scope', function ($scope) {
     $scope.stopwatches = [{
       log: []
-    }, {
-      interval: 1000,
-      log: []
-    }, {
-      interval: 2000,
-      log: []
     }];
   }])
+
   .filter('stopwatchTime', function () {
     return function (input) {
       if (input) {
@@ -37,6 +32,7 @@ var stopWatchApp = angular.module('stopWatchApp', [])
       }
     };
   })
+
   .directive('bbStopwatch', ['StopwatchFactory', function (StopwatchFactory) {
     return {
       restrict: 'EA',
@@ -52,6 +48,7 @@ var stopWatchApp = angular.module('stopWatchApp', [])
       }
     };
   }])
+
   .factory('StopwatchFactory', ['$interval', function ($interval) {
 
     return function (options) {
