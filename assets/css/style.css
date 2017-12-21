@@ -81,6 +81,7 @@ footer {
 	height: 100vh;
 	overflow: hidden;
 	width: 100%;
+	text-align: center;
 }
 
 h1,
@@ -476,6 +477,7 @@ IDs
 	position: relative;
 	height: 50vh;
 	margin-top: 25vh;
+	text-align: center;
 }
 
 #landing {
