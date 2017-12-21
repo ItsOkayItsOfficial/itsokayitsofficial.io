@@ -22,20 +22,33 @@
   <!-- Custom CSS -->
   <link href="../../assets/css/style.css" rel="stylesheet">
   <link href="../../assets/css/port.css" rel="stylesheet">
-  <link href="../../assets/css/hover.css" rel="stylesheet">
   <link href="../../assets/css/coder.css" rel="stylesheet">
 
 </head>
 
-<body data-spy="scroll" data-target="#site-nav" data-offset="120">
+<body>
 
   <!-- Sitnav -->
-  <nav id="site-nav" class="site-nav transition">
-    <a class="nav-link scroll" href="#top">Top</a>
-    <a class="nav-link scroll" href="#overview">Overview</a>
-    <a class="scroll" href="../../index.html"><img src="../../assets/img/logo.png" class="nav-logo"></a>
-    <a class="nav-link scroll" href="#build">Build</a>
-    <a class="nav-link scroll" href="#contact">Contact</a>
+  <nav id="site-nav" class="navbar nav-top">
+    <a class="nav-link" href="#about">
+      <h1>About</h1>
+    </a>
+    <a class="nav-link" href="#skills">
+      <h1>Skills</h1>
+    </a>
+    <a class="nav-logo" href="#landing">
+      <svg class="nav-logo-bg" viewBox="0 0 250 250">
+        <circle id="loader" cx="125" cy="125" r="121" />
+        <polygon id="check" points="218.92 85.12 190.64 56.84 103.28 144.2 55.82 96.73 27.53 125.02 75.01 172.5 75.03 172.48 103.3 200.75 218.92 85.12"
+        />
+      </svg>
+    </a>
+    <a class="nav-link" href="#portfolio">
+      <h1>Portfolio</h1>
+    </a>
+    <a class="nav-link" href="#contact">
+      <h1>Contact</h1>
+    </a>
   </nav>
   <!--/sitnav -->
 
@@ -96,35 +109,43 @@
         <div class="col-md-8">
           <ul id="tools">
             <li>
-              <p><img src="../../assets/img/icons/git1.svg"> .git</p>
+              <p>
+                <img src="../../assets/img/icons/git1.svg"> .git</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/js1.svg"> javascript</p>
+              <p>
+                <img src="../../assets/img/icons/js1.svg"> javascript</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/txt1.svg"> text</p>
+              <p>
+                <img src="../../assets/img/icons/txt1.svg"> text</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/json1.svg"> json</p>
+              <p>
+                <img src="../../assets/img/icons/json1.svg"> json</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/node1.svg"> node</p>
+              <p>
+                <img src="../../assets/img/icons/node1.svg"> node</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/vscode1.svg"> vs code</p>
+              <p>
+                <img src="../../assets/img/icons/vscode1.svg"> vs code</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/md1.svg"> markdown</p>
+              <p>
+                <img src="../../assets/img/icons/md1.svg"> markdown</p>
             </li>
             &nbsp
             <li>
-              <p><img src="../../assets/img/icons/github1.svg"> github</p>
+              <p>
+                <img src="../../assets/img/icons/github1.svg"> github</p>
             </li>
           </ul>
           <!-- /#tools -->
@@ -155,17 +176,24 @@
             </thead>
             <tbody>
               <tr class="twitter">
-                <td><a href="https://dev.twitter.com/overview/api" target="_blank">Twitter</a></td>
+                <td>
+                  <a href="https://dev.twitter.com/overview/api" target="_blank">Twitter</a>
+                </td>
                 <td>Our last 20 tweets & when they were created.</td>
               </tr>
               <tr class="spotify">
-                <td><a href="https://developer.spotify.com/web-api/" target="_blank">Spotify</a></td>
+                <td>
+                  <a href="https://developer.spotify.com/web-api/" target="_blank">Spotify</a>
+                </td>
                 <td>User-specified track info: Name, Artist(s), Album, Preview URL.</td>
               </tr>
               <tr class="omdb">
-                <td><a href="https://www.omdbapi.com/" target="_blank">OMDb</a></td>
-                <td>User-specified movie info: Title <small>(Year)</small>, Actors, <small>IMDB/RT</small> Rating, Country/Lang,
-                  Plot, Rating</td>
+                <td>
+                  <a href="https://www.omdbapi.com/" target="_blank">OMDb</a>
+                </td>
+                <td>User-specified movie info: Title
+                  <small>(Year)</small>, Actors,
+                  <small>IMDB/RT</small> Rating, Country/Lang, Plot, Rating</td>
               </tr>
             </tbody>
           </table>
@@ -189,17 +217,46 @@
 
         <!-- Coder Sidebar -->
         <div class="col-md-2 coder">
-          <div class="header">&nbsp<small>EXPLORER: hal-node-app</small></div>
+          <div class="header">&nbsp
+            <small>EXPLORER: hal-node-app</small>
+          </div>
           <ul class="sidebar nav">
-            <li><a href="#git_setup" data-toggle="tab"><img src="../../assets/img/icons/git1.svg"> .gitignore</a></li>
-            <li><a href="#hal_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js</a></li>
-            <li><a href="#keys_setup" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> key.js</a></li>
-            <li><a href="#log_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> log.txt</a></li>
-            <li><a href="#pkg-lock_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package-lock.json</a></li>
-            <li><a href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg"> package.json</a></li>
-            <li><a href="#random_setup" data-toggle="tab"><img src="../../assets/img/icons/txt1.svg"> random.txt</a></li>
-            <li><a href="#readme_setup" data-toggle="tab"><img src="../../assets/img/icons/md1.svg"> README.md</a></li>
-            <li><a href="#node_setup" data-toggle="tab"><img src="../../assets/img/icons/node1.svg"> node_modules</a></li>
+            <li>
+              <a href="#git_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/git1.svg"> .gitignore</a>
+            </li>
+            <li>
+              <a href="#hal_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/js1.svg"> hal.js</a>
+            </li>
+            <li>
+              <a href="#keys_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/js1.svg"> key.js</a>
+            </li>
+            <li>
+              <a href="#log_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/txt1.svg"> log.txt</a>
+            </li>
+            <li>
+              <a href="#pkg-lock_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/json1.svg"> package-lock.json</a>
+            </li>
+            <li>
+              <a href="#pkg_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/json1.svg"> package.json</a>
+            </li>
+            <li>
+              <a href="#random_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/txt1.svg"> random.txt</a>
+            </li>
+            <li>
+              <a href="#readme_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/md1.svg"> README.md</a>
+            </li>
+            <li>
+              <a href="#node_setup" data-toggle="tab">
+                <img src="../../assets/img/icons/node1.svg"> node_modules</a>
+            </li>
           </ul>
           <br>
           <br>
@@ -212,7 +269,10 @@
 
             <div id="git_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/git1.svg"> .gitignore</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/git1.svg"> .gitignore</a>
+                </li>
               </ul>
               <pre class="prettyprint">
               <span class="nocode">
@@ -224,7 +284,10 @@
 
             <div id="hal_setup" class="tab-pane fade active in">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/js1.svg"> hal.js</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/js1.svg"> hal.js</a>
+                </li>
               </ul>
               <pre class="prettyprint">
               <span class="nocode">
@@ -236,7 +299,10 @@
 
             <div id="keys_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/js1.svg"> keys.js</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/js1.svg"> keys.js</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -250,7 +316,10 @@
 
             <div id="log_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/txt1.svg"> log.txt</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/txt1.svg"> log.txt</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -262,7 +331,10 @@
 
             <div id="pkg-lock_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/json1.svg"> package-lock.json</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/json1.svg"> package-lock.json</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -275,7 +347,10 @@
 
             <div id="pkg_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/json1.svg"> package.json</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/json1.svg"> package.json</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -288,7 +363,10 @@
 
             <div id="random_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/txt1.svg"> random.txt</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/txt1.svg"> random.txt</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -300,7 +378,10 @@
 
             <div id="readme_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/md1.svg"> README.md</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/md1.svg"> README.md</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -313,7 +394,10 @@
 
             <div id="node_setup" class="tab-pane fade">
               <ul class="tabs nav">
-                <li class="active"><a><img src="../../assets/img/icons/node1.svg"> node_modules</a></li>
+                <li class="active">
+                  <a>
+                    <img src="../../assets/img/icons/node1.svg"> node_modules</a>
+                </li>
               </ul>
               <pre class="prettyprint">
                   <span class="nocode">
@@ -345,7 +429,9 @@
       </a>
       <hr>
       <ul class="carousel-indicators">
-        <a class="carousel-control l" href='#myCarousel' role='button' data-slide='prev'><span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span></a>
+        <a class="carousel-control l" href='#myCarousel' role='button' data-slide='prev'>
+          <span class='glyphicon glyphicon-chevron-left' aria-hidden='true'></span>
+        </a>
         <li data-target="#myCarousel" data-slide-to="1" class="active">
           <h2>Initialize</h2>
         </li>
@@ -361,7 +447,9 @@
         <li data-target="#myCarousel" data-slide-to="5">
           <h2>OMDb</h2>
         </li>
-        <a class="carousel-control r" href='#myCarousel' role='button' data-slide='next'><span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span></a>
+        <a class="carousel-control r" href='#myCarousel' role='button' data-slide='next'>
+          <span class='glyphicon glyphicon-chevron-right' aria-hidden='true'></span>
+        </a>
       </ul>
       <hr>
       <div class='carousel-inner'>
@@ -371,14 +459,31 @@
 
           <div class="col-md-4">
             <h3>Using Require</h3>
-            <p>We have to use Node.js's <samp>require()</samp> method to call from <samp><img src="../../assets/img/icons/node1.svg">node_modules</samp>              the dependencies we need for Hal to work.</p>
-            <p>We're also using <samp>require()</samp> to import information from our <samp><img src="../../assets/img/icons/js1.svg">keys.js</samp>              </p>
+            <p>We have to use Node.js's
+              <samp>require()</samp> method to call from
+              <samp>
+                <img src="../../assets/img/icons/node1.svg">node_modules</samp> the dependencies we need for Hal to work.</p>
+            <p>We're also using
+              <samp>require()</samp> to import information from our
+              <samp>
+                <img src="../../assets/img/icons/js1.svg">keys.js</samp>
+            </p>
           </div>
 
           <div class="col-md-6 coder">
             <ul class="tabs nav">
-              <li class="active"><a href="#hal_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> hal.js<button type="button" class="close">×</button></a></li>
-              <li><a href="#keys_init" data-toggle="tab"><img src="../../assets/img/icons/js1.svg"> keys.js<button type="button" class="close">×</button></a></li>
+              <li class="active">
+                <a href="#hal_init" data-toggle="tab">
+                  <img src="../../assets/img/icons/js1.svg"> hal.js
+                  <button type="button" class="close">×</button>
+                </a>
+              </li>
+              <li>
+                <a href="#keys_init" data-toggle="tab">
+                  <img src="../../assets/img/icons/js1.svg"> keys.js
+                  <button type="button" class="close">×</button>
+                </a>
+              </li>
             </ul>
 
             <div class="tab-content">
@@ -504,19 +609,27 @@
           <ul class="links">
             <!-- linkedin -->
             <li>
-              <a href="https://www.linkedin.com/in/alexander-pugh/" target="_blank"><i id="social-li" class="fa fa-linkedin-square fa-3x social"></i></a>
+              <a href="https://www.linkedin.com/in/alexander-pugh/" target="_blank">
+                <i id="social-li" class="fa fa-linkedin-square fa-3x social"></i>
+              </a>
             </li>
             <!-- github -->
             <li>
-              <a href="https://github.com/ItsOkayItsOfficial" target="_blank"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+              <a href="https://github.com/ItsOkayItsOfficial" target="_blank">
+                <i id="social-gh" class="fa fa-github-square fa-3x social"></i>
+              </a>
             </li>
             <!-- twitter -->
             <li>
-              <a href="https://twitter.com/okayitsofficial" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+              <a href="https://twitter.com/okayitsofficial" target="_blank">
+                <i id="social-tw" class="fa fa-twitter-square fa-3x social"></i>
+              </a>
             </li>
             <!-- email -->
             <li>
-              <a href="mailto:alexp@itsokayitsofficial.io"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+              <a href="mailto:alexp@itsokayitsofficial.io">
+                <i id="social-em" class="fa fa-envelope-square fa-3x social"></i>
+              </a>
             </li>
           </ul>
         </div>

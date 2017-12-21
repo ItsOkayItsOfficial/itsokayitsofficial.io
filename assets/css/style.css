@@ -123,6 +123,14 @@ section {
 	width: 100%;
 }
 
+section#portfolio {
+	display: block;
+	height: 120vh;
+	overflow: hidden;
+	padding-top: 20px;
+	width: 100%;
+}
+
 small {
 	color: var(--accent-grey);
 	font: var(--font-text);
