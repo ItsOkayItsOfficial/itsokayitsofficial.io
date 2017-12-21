@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="descption" content="ItsOkayItsOfficial! The Official portfolio of Alex P, full-stack web developer and know human.">
+    <meta name="author" content="Alex P">
+    <link rel="shortcut icon" href="../../assets/img/logo.png">
+
+    <title>Alex P | Code Editor for Bootstrap</title>
+
+    <!-- Bootstrap CSS 3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Coder CSS -->
+    <link href="coder.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Sitnav -->
+    <nav id="site-nav" class="navbar nav-top">
+        <a class="nav-logo" href="http://itsokayitsofficial.io">
+            <svg class="nav-logo-bg nav-logo-sm" viewBox="0 0 250 250">
+                <circle id="loader" cx="125" cy="125" r="121" style="opacity: 0;"></circle>
+                <polygon id="check" points="218.92 85.12 190.64 56.84 103.28 144.2 55.82 96.73 27.53 125.02 75.01 172.5 75.03 172.48 103.3 200.75 218.92 85.12"
+                />
+            </svg>
+        </a>
+    </nav>
+    <!--/sitnav -->
+
+    <div class="container">
+        <div class="row equal">
+
+            <!-- Coder Sidebar -->
+            <div class="col-md-2 coder">
+                <div class="sidebar header">&nbsp
+                    <small>EXPLORER: hal-node-app</small>
+                </div>
+                <ul class="sidebar nav">
+                    <li>
+                        <a>
+                            <img src="./img/icons/git1.svg"> .gitignore</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/js1.svg"> hal.js</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/js1.svg"> key.js</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/txt1.svg"> log.txt</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/json1.svg"> package-lock.json</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/json1.svg"> package.json</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/txt1.svg"> random.txt</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/md1.svg"> README.md</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="./img/icons/node1.svg"> node_modules</a>
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <br>
+            </div>
+            <!-- /sidebar -->
+
+            <!-- coder Coder -->
+            <div class="col-md-8 coder">
+                <ul class="tabs nav">
+                    <li class="active">
+                        <a href="#hal-js" data-toggle="tab">
+                            <img src="./img/icons/js1.svg"> hal.js
+                            <button type="button" class="close">×</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#keys-js" data-toggle="tab">
+                            <img src="./img/icons/js1.svg"> keys.js
+                            <button type="button" class="close">×</button>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#pkg-json" data-toggle="tab">
+                            <img src="./img/icons/json1.svg"> package.json
+                            <button type="button" class="close">×</button>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <!-- hal.js -->
+                    <div id="hal-js" class="tab-pane active">
+                        <pre class="prettyprint linenums">
+  <code>
+// Exit Button
+$(document).on('click', '.close', function () {
+    var content = $(this).parent().attr('href');
+    var del = $(this).closest('li');
+    if ($(del).hasClass('active')) {
+        if ($(del).next()[0]) {
+            $(del).next().find('a').click();
+        } else {
+            $(del).prev().find('a').click();
+        };
+    }
+    $(del).remove();
+    $('div').find(content).remove();
+});
+  </code>
+                </pre>
+                    </div>
+
+                    <!-- keys.js -->
+                    <div id="keys-js" class="tab-pane">
+                        <pre class="prettyprint linenums">
+  <code>
+// Change Coder Style
+$(document).on('click', '.theme', function loadScript() {
+    var skin = $(this).attr('name');
+    console.log(skin);
+    var script = "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=" + skin;
+    console.log(script);
+    $('pre').removeClass('prettyprinted').find('span').contents().unwrap();
+    $.ajax({
+        url: script,
+        dataType: 'script',
+        async: false
+    });
+});
+  </code>
+                </pre>
+                    </div>
+
+                    <!-- log.txt -->
+                    <div id="log.txt" class="tab-pane">
+                        <pre class="prettyprint linenums">
+    <samp>
+
+    </samp>
+                </pre>
+                    </div>
+
+                    <!-- package-lock.json -->
+                    <div id="pkg-lock-json" class="tab-pane">
+                        <pre class="prettyprint linenums">
+    <code>
+
+    </code>
+                </pre>
+                    </div>
+
+                    <!-- package.json -->
+                    <div id="pkg-json" class="tab-pane">
+                        <pre class="prettyprint linenums">
+    <code>
+{
+    "name": "liri-node-app",
+    "version": "1.0.0",
+    "description": "Section 10 - Node Homework",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ItsOkayItsOfficial/liri-node-app.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ItsOkayItsOfficial/liri-node-app/issues"
+    },
+    "homepage": "https://github.com/ItsOkayItsOfficial/liri-node-app#readme",
+    "dependencies": {
+        "chalk": "^2.1.0",
+        "inquirer": "^3.3.0",
+        "node-spotify-api": "^1.0.7",
+        "request": "^2.82.0",
+        "spotify-web-api-node": "^2.5.0",
+        "twitter": "^1.7.1"
+    }
+    }
+    </code>
+                </pre>
+                    </div>
+
+                    <!-- random.txt -->
+                    <div id="random.txt" class="tab-pane">
+                        <pre class="prettyprint linenums">
+    <samp>
+
+    </samp>
+                </pre>
+                    </div>
+
+                    <!-- README.md -->
+                    <div id="readme.md" class="tab-pane">
+                        <pre class="prettyprint linenums">
+    <samp>
+
+    </samp>
+                </pre>
+                    </div>
+
+                </div>
+                <!-- /#myTabContent -->
+            </div>
+            <!-- /coder -->
+        </div>
+        <!-- /row equal -->
+    </div>
+    <!-- /container -->
+
+    <div class="row">
+        <a href="https://github.com/ItsOkayItsOfficial/ioio_coder">
+            <h2>GitHub Repo</h2>
+        </a>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Prettfy Loader -->
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?lang=css&amp;skin=desert"></script>
+    <!-- Custom Js -->
+    <script src="coder.js"></script>
+
+</body>
+<!-- /body -->
+
+</html>
+<!-- /html -->

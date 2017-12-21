@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="descption" content="ItsOkayItsOfficial! The Official portfolio of Alex P, full-stack web developer and know human.">
+  <meta name="author" content="Alex P">
+  <link rel="shortcut icon" href="../../assets/img/logo.png">
+
+  <title>Alex P | Code Editor with Bootstrap</title>
+
+  <!-- Font AWesome CSS 4.7.0 -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS 3.3.7 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Prettify Loader -->
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autorun=true&amp;lang=css&amp;skin=desert"></script>
+
+  <!-- Custom CSS -->
+  <link href="../../assets/css/style.css" rel="stylesheet">
+  <link href="../../assets/css/port.css" rel="stylesheet">
+  <link href="../../assets/css/coder.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Sitnav -->
+  <nav id="site-nav" class="navbar nav-top">
+    <a class="nav-logo" href="http://itsokayitsofficial.io">
+      <svg class="nav-logo-bg nav-logo-sm" viewBox="0 0 250 250">
+        <circle id="loader" cx="125" cy="125" r="121" style="opacity: 0;"></circle>
+        <polygon id="check" points="218.92 85.12 190.64 56.84 103.28 144.2 55.82 96.73 27.53 125.02 75.01 172.5 75.03 172.48 103.3 200.75 218.92 85.12"
+        />
+      </svg>
+      <a class="nav-link" href="https://github.com/ItsOkayItsOfficial/ioio_coder">
+        <h1>GitHub Repo</h1>
+      </a>
+    </a>
+
+  </nav>
+  <!--/sitnav -->
+
+  <div id="body">
+
+    <!-- Setup -->
+    <div id="setup" class="row">
+
+      <!-- Coder Sidebar -->
+      <div class="col-md-2 coder">
+        <div class="header">&nbsp
+          <small>EXPLORER: hal-node-app</small>
+        </div>
+        <ul class="sidebar nav">
+          <li>
+            <a href="#git_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/git1.svg"> .gitignore</a>
+          </li>
+          <li>
+            <a href="#hal_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/js1.svg"> hal.js</a>
+          </li>
+          <li>
+            <a href="#keys_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/js1.svg"> key.js</a>
+          </li>
+          <li>
+            <a href="#log_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/txt1.svg"> log.txt</a>
+          </li>
+          <li>
+            <a href="#pkg-lock_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/json1.svg"> package-lock.json</a>
+          </li>
+          <li>
+            <a href="#pkg_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/json1.svg"> package.json</a>
+          </li>
+          <li>
+            <a href="#random_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/txt1.svg"> random.txt</a>
+          </li>
+          <li>
+            <a href="#readme_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/md1.svg"> README.md</a>
+          </li>
+          <li>
+            <a href="#node_setup" data-toggle="tab">
+              <img src="../../assets/img/icons/node1.svg"> node_modules</a>
+          </li>
+        </ul>
+        <br>
+        <br>
+      </div>
+      <!-- /Sidebar -->
+
+      <!-- Setup Coder -->
+      <div class="col-md-8 coder">
+        <div class="tab-content">
+
+          <div id="git_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/git1.svg"> .gitignore</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+              <span class="nocode">
+              <p>This file specifies intentionally untracked files that Git should ignore.</p>
+              <p>However files already tracked by Git are not affected.</p>
+              </span>
+              </pre>
+          </div>
+
+          <div id="hal_setup" class="tab-pane fade active in">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/js1.svg"> hal.js</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+              <span class="nocode">
+              <p>Where most of our coding will take place</p>
+              <p>Here we will write the code we need to grab the data from keys.js, dependencies for Node.js from NPM, as well as basic scripting and logging for Hal.</p>
+                </span>
+                </pre>
+          </div>
+
+          <div id="keys_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/js1.svg"> keys.js</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Just a basic Javascript file where we will store the API access tokens and 'keys' for the Spotify and Twitter
+                APIs to use</p>
+              <p>**Do Not** add this file to the .gitignore. This might be a good thing to do in the real world, but it for
+                our purposes here we need it packaged with Hal</p>
+                </span>
+                </pre>
+          </div>
+
+          <div id="log_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/txt1.svg"> log.txt</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Our log.txt setup is where we will log all of the input, output, and interactions between the user, CLI, Hal,
+                and the specific APIs</p>
+                </span>
+                </pre>
+          </div>
+
+          <div id="pkg-lock_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/json1.svg"> package-lock.json</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>This is automatically generated for any operations where NPM modifies either the <a href="#node_setup" data-toggle="tab"><img src="../../assets/img/icons/node1.svg">node_modules</a>                tree, or <a href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg">package.json</a>.</p>
+              <p>It describes the exact tree that was generated, such that subsequent installs are able to generate identical
+                trees, regardless of intermediate dependency updates.</p>
+              </span>
+              </pre>
+          </div>
+
+          <div id="pkg_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/json1.svg"> package.json</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>This document is where we store the specific dependencies node.js will need to make Hal work.</p>
+              <p>It must be actual JSON, not just a JavaScript object literal.</p>
+              <p>For a complete document breakdown see <a href="http://browsenpm.org/package.json" target="_blank">this interactive guide</a></p>
+              </span>
+              </pre>
+          </div>
+
+          <div id="random_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/txt1.svg"> random.txt</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>This is where we will store random returns to use.</p>
+              <p>Hal will take the text inside of random.txt and then use it to call one of Hal's commands.</p>
+                  </span>
+              </pre>
+          </div>
+
+          <div id="readme_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/md1.svg"> README.md</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Our <img src="../../assets/img/icons/github1.svg">github README file for our repository is tell other people
+                why, what they can do, and how they can use Hal Bot.</p>
+              <p>In this case we're using it to store the project instructions</p>
+                  </span>
+              </pre>
+          </div>
+
+          <div id="node_setup" class="tab-pane fade">
+            <ul class="tabs nav">
+              <li class="active">
+                <a>
+                  <img src="../../assets/img/icons/node1.svg"> node_modules</a>
+              </li>
+            </ul>
+            <pre class="prettyprint">
+                  <span class="nocode">
+              <p>Where our NPM "dependencies" packages are dropped when installed under their prefix.</p>
+              <p>This is folder is created automatically by node and populated with the dependencies we specified in our
+                <a href="#pkg_setup" data-toggle="tab"><img src="../../assets/img/icons/json1.svg">package.json</a>
+              </p>
+                  </span>
+              </pre>
+          </div>
+
+        </div>
+        <!-- /#myTabContent -->
+      </div>
+      <!-- /.col Setup Coder -->
+    </div>
+    <!-- /#setup -->
+
+
+    <div class="row">
+      <!-- Coder Sidebar -->
+      <div class="col-md-2 coder">
+        <div class="header">&nbsp
+          <small>EXPLORER: hal-node-app</small>
+        </div>
+        <ul class="sidebar nav">
+          <li>
+            <a href="#hal_init" data-toggle="tab">
+              <img src="../../assets/img/icons/js1.svg"> hal.js</a>
+          </li>
+          <li>
+            <a href="#keys_init" data-toggle="tab">
+              <img src="../../assets/img/icons/js1.svg"> key.js</a>
+          </li>
+        </ul>
+        <br>
+        <br>
+      </div>
+      <!-- /Sidebar -->
+
+      <div class="col-md-8 coder">
+        <ul class="tabs nav">
+          <li class="active">
+            <a href="#hal_init" data-toggle="tab">
+              <img src="../../assets/img/icons/js1.svg"> hal.js
+              <button type="button" class="close">×</button>
+            </a>
+          </li>
+          <li>
+            <a href="#keys_init" data-toggle="tab">
+              <img src="../../assets/img/icons/js1.svg"> keys.js
+              <button type="button" class="close">×</button>
+            </a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <!-- hal.js -->
+          <div id="hal_init" class="tab-pane active">
+            <pre class="prettyprint lang-javascript">
+  <code>
+  // Variables - require
+  var keys = require("./keys.js");
+  var fs = require("fs");
+  var request = require("request");
+  var twitter = require("twitter");
+  var spotify = require("node-spotify-api");
+  var chalk = require("chalk");
+  </code>
+              </pre>
+          </div>
+
+          <div id="keys_init" class="tab-pane">
+            <pre class="prettyprint lang-javascript">
+    <code>
+  // Twitter API keys
+  var twitterKeys = {
+    consumer_key: 'LRtKWnfkEYctrT5udepDGADyM',
+    consumer_secret: 'gv1RiB4eXd4mftJJKYnAS7BC7SrI0d7IjY9nQn8MRwRC9Q7F7G',
+    access_token_key: '2823395241-uYjfYfpdBkneGSuUD0G5xBmWrXDZKsVrFPrhGhT',
+    access_token_secret: 'RTe0Oh7TY4qMyCWocFUA5OktmbiInnE1kwwiv6OAzCYBb'
+  };
+
+  // Spotify API keys
+  var spotifyKeys = {
+    client_id: '21ff2fb0d1594b44b2759fdcdd60b77d',
+    client_secret: '4a8f6c3b93ea44b7a465ad51f2128704'
+  };
+
+  // Exports
+  module.exports = {
+    twitterKeys,
+    spotifyKeys
+  };
+    </code>
+                </pre>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /initialize -->
+
+  </div>
+  <!-- /#body -->
+
+
+  <!-- jQuery & Bootstrap Js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <!-- Custom Js -->
+  <!-- <script src="../../assets/js/custom.js"></script> -->
+  <script src="../../assets/js/classie.js"></script>
+
+</body>
+<!-- /body -->
+
+</html>
+<!-- /html -->
