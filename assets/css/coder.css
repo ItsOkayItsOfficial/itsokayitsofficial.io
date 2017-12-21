@@ -6,9 +6,11 @@
  * URL:  https://github.com/ItsOkayItsOfficial/ioio_coder
  */
 
+#body {
+    padding: 75px 50px;
+}
 
 /* Pre */
-
 pre {
     display: block;
     margin: 0 -25px 0 0;
