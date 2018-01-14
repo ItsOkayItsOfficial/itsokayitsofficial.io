@@ -425,8 +425,8 @@ Classes
 
 .social {
 	list-style-type: none;
-	margin: 0 70px -10px 0;
-	padding-top: 50px;
+	padding-left: 50%;
+	float: left;
 }
 
 .social > li {
