@@ -55,13 +55,13 @@ Root
 Base
 ====================*/
 
-html,
 body {
 	display: inline-block;
 	height: 100%;
-	margin: -20px -20px;
 	padding: var(--padding);
-	width: 100%;
+	padding-top: 0;
+	overflow-x: hidden;
+	margin-top: -8px;
 	animation: all 1s ease-in-out;
 	-webkit-animation: all 1s ease-out;
 	-moz-animation: all 1s ease-out;
@@ -120,15 +120,7 @@ section {
 	display: block;
 	height: 100vh;
 	overflow: hidden;
-	padding-top: 20px;
-	width: 100%;
-}
-
-section#portfolio {
-	display: block;
-	height: 120vh;
-	overflow: hidden;
-	padding-top: 20px;
+	padding-top: 40px;
 	width: 100%;
 }
 
@@ -168,7 +160,7 @@ Classes
 }
 
 .col-8 {
-	width: 68%;
+	width: 64%;
 }
 
 .col-6 {
@@ -176,7 +168,7 @@ Classes
 }
 
 .col-4 {
-	width: 25%;
+	width: 30%;
 }
 
 .col-2 {
@@ -306,9 +298,9 @@ Classes
 .navbar {
 	height: 50px;
 	position: fixed;
-	margin-top: 25px;
+	margin-top: 75px;
 	text-align: center;
-	width: 100%;
+	width: 96.5vw;
 	z-index: 1;
 	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
@@ -328,7 +320,7 @@ Classes
 }
 
 .nav-top {
-	margin-top: -25px;
+	margin-top: -20px;
 	transition: all 1s ease-in-out;
 	-webkit-transition: all 1s ease-in-out;
 	-moz-transition: all 1s ease-in-out;
@@ -403,7 +395,7 @@ Classes
 .row {
 	display: inline-block;
 	height: 100%;
-	padding: var(--padding);
+	padding: 20px 0px;
 	width: 100%;
 }
 
@@ -457,10 +449,6 @@ Classes
 IDs
 ==================*/
 
-#about {
-	height: 100vh;
-}
-
 #check {
 	fill: var(--main-blue);
 	opacity: 0;
@@ -502,6 +490,82 @@ IDs
 	-webkit-transition: all .5s ease-in-out;
 	-moz-transition: all .5s ease-in-out;
 	-o-transition: all .5s ease-in-out;
+}
+
+#portfolio {
+	height: 120vh;
+}
+
+
+/*==================
+Media Queries
+==================*/
+
+@media screen and (max-height: 800px) {
+	body {
+		padding: 0;
+		margin-top: -50px;
+		width: 100vw;
+	}
+	section {
+		overflow: visible;
+		position: relative;
+		height: 100%;
+	}
+	#landing {
+		display: none;
+	}
+	.nav-logo-bg {
+		display: none;
+	}
+	.navbar {
+		display: none;
+	}
+	.nav-top {
+		display: inline-block;
+		margin-top: 8%;
+		width: 100%;
+	}
+	.nav-logo-sm {
+		display: block;
+	}
+	.nav-link {
+		padding: 8px;
+	}
+	.col-12,
+	.col-10,
+	.col-8,
+	.col-6,
+	.col-4,
+	.col-2 {
+		float: left;
+		position: relative;
+		padding: 0px 1px;
+		min-height: 1px;
+		width: 100vw;
+	}
+	#skills {
+		height: 100vh;
+	}
+	#portfolio {
+		height: 100%;
+	}
+	.row.half {
+		height: 100%;
+	}
+	.social {
+		float: left;
+		padding: 0;
+		margin: 0;
+	}
+	.ops {
+		padding: 10px;
+	}
+	footer {
+		position: absolute;
+		margin-bottom: 0;
+		width: 100vw;
+	}
 }
 
 
