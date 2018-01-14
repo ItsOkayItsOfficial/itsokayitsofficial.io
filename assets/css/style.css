@@ -449,6 +449,10 @@ Classes
 IDs
 ==================*/
 
+#about {
+	padding-top: 5%;
+}
+
 #check {
 	fill: var(--main-blue);
 	opacity: 0;
@@ -512,6 +516,15 @@ Media Queries
 		position: relative;
 		height: 100%;
 	}
+	#about {
+		padding-top: 0;
+	}
+	#skills {
+		height: 100vh;
+	}
+	#portfolio {
+		height: 100%;
+	}
 	#landing {
 		display: none;
 	}
@@ -543,12 +556,6 @@ Media Queries
 		padding: 0px 1px;
 		min-height: 1px;
 		width: 100vw;
-	}
-	#skills {
-		height: 100vh;
-	}
-	#portfolio {
-		height: 100%;
 	}
 	.row.half {
 		height: 100%;
