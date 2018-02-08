@@ -473,11 +473,21 @@ IDs
 }
 
 #landing {
+	/* background-image: url('https://i.imgur.com/TgBCHwq.gif');
+	background-repeat: no-repeat;
+	background-size: contain; */
 	opacity: 0;
 	animation: fadeIn 1s linear forwards 3.5s;
 	-webkit-animation: fadeIn 1s linear forwards 4s;
 	-moz-animation: fadeIn 1s linear forwards 4s;
 	-o-animation: fadeIn 1s linear forwards 4s;
+}
+
+section > img {
+	height: 100%;
+  width: 100%;
+	object-fit: fill;
+	z-index: 999;
 }
 
 #loader {
@@ -505,7 +515,29 @@ IDs
 Media Queries
 ==================*/
 
-@media screen and (max-height: 800px) {
+/* @media screen and (max-width: 1200px) {
+	.col-10 {
+		width: 64%;
+	}
+
+	.col-8 {
+		width: 45%;
+	}
+
+	.col-6 {
+		width: 30%;
+	}
+
+	.col-4 {
+		width: 11.11111%;
+	}
+
+	.col-2 {
+		width: 11.1111%;
+	}
+} */
+
+@media screen and (max-width: 800px) {
 	body {
 		padding: 0;
 		margin-top: -50px;
