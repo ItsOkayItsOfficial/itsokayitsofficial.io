@@ -284,7 +284,6 @@ Classes
 }
 
 .ops {
-	display: inline-block;
 	padding: var(--padding);
 }
 
@@ -612,6 +611,7 @@ Media Queries
 		margin: 0;
 	}
 	.ops {
+		display: inline-block;
 		padding: 10px;
 	}
 	footer {
