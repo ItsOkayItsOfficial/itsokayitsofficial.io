@@ -291,7 +291,7 @@ Classes
 .ops:hover>h2,
 .ops:focus>h2,
 .ops:active>h2 {
-	color: white;
+	color: var(--main-blue);
 	border-bottom: 3px solid var(--main-blue);
 	transition: all .5s ease-in-out;
 	-webkit-transition: all .5s ease-in-out;
