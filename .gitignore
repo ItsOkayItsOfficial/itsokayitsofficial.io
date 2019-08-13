@@ -8,7 +8,9 @@
 *.sln.docstates
 loader.html
 assets/css/loader.css
+assets/css/hover.css
 assets/js/loader.js
+assets/img/icons/*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
