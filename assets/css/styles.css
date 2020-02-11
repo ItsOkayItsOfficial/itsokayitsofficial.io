@@ -5,9 +5,6 @@ body {
 a {
 }
 
-h1 {
-}
-
 #main {
 }
 
@@ -15,4 +12,14 @@ h1 {
 }
 
 #info {
+}
+
+#logos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.logo {
+  max-width: 5em;
 }
