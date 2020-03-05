@@ -68,6 +68,13 @@ draw = (t, a, e) => {
 };
 
 // Calcultor function to generate new coords
+calculate = () => {
+  for (var t = Math.random(), a = 0; a < coords.length; a++) {
+    var e = coords[a];
+    if (t < e.w) return e;
+    t -= e.w;
+  }
+};
 
 // Recursive function to repeat Calculator and Drawing function
 
