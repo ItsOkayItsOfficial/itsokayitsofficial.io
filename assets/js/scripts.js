@@ -77,5 +77,16 @@ calculate = () => {
 };
 
 // Recursive function to repeat Calculator and Drawing function
+iterate = () => {
+  for (var t = 0; t < 100; t++) {
+    var a = calculate();
+    (x1 = x * a.a + y * a.b + a.tx),
+      (y1 = x * a.c + y * a.d + a.ty),
+      (x = x1),
+      (y = y1),
+      draw(x, y, 300);
+  }
+  window.requestAnimationFrame(iterate);
+};
 
 // Execute
