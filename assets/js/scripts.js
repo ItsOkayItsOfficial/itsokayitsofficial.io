@@ -63,6 +63,9 @@ let canvas = document.getElementById("canvas"),
   ];
 
 // Drawing function to generate image
+draw = (t, a, e) => {
+  c.fillRect(t * e, -a * e, 0.5, 0.5);
+};
 
 // Calcultor function to generate new coords
 
