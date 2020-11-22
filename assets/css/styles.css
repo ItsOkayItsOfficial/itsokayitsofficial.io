@@ -1,14 +1,26 @@
 html,
 body {
+  margin: 0;
+  padding: 0;
+  font-family: arial !important;
+  letter-spacing: 0.2em;
+  text-align: right;
+  height: 100%;
 }
 
 a {
 }
 
 #main {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
 #canvas {
+  width: 949;
+  height: 1680;
 }
 
 #info {
