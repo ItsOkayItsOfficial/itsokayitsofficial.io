@@ -13,7 +13,7 @@ let canvas = document.getElementById("canvas"),
       d: 0.6,
       tx: 0,
       ty: 0,
-      w: 0.17
+      w: 0.17,
     },
     {
       a: 0.05,
@@ -22,7 +22,7 @@ let canvas = document.getElementById("canvas"),
       d: -0.5,
       tx: 0,
       ty: 1,
-      w: 0.17
+      w: 0.17,
     },
     {
       a: 0.46,
@@ -31,7 +31,7 @@ let canvas = document.getElementById("canvas"),
       d: 0.383,
       tx: 0,
       ty: 0.6,
-      w: 0.17
+      w: 0.17,
     },
     {
       a: 0.47,
@@ -40,7 +40,7 @@ let canvas = document.getElementById("canvas"),
       d: 0.423,
       tx: 0,
       ty: 1.1,
-      w: 0.17
+      w: 0.17,
     },
     {
       a: 0.433,
@@ -49,7 +49,7 @@ let canvas = document.getElementById("canvas"),
       d: 0.476,
       tx: 0,
       ty: 1,
-      w: 0.16
+      w: 0.16,
     },
     {
       a: 0.421,
@@ -58,8 +58,8 @@ let canvas = document.getElementById("canvas"),
       d: 0.306,
       tx: 0,
       ty: 0.7,
-      w: 0.16
-    }
+      w: 0.16,
+    },
   ];
 
 // Drawing function to generate image
@@ -89,4 +89,10 @@ iterate = () => {
   window.requestAnimationFrame(iterate);
 };
 
-// Execute
+// Execute by applying Canvas
+canvas.width = w;
+canvas.height = h;
+c.translate(w / 2, h);
+
+// Keep Executing
+iterate();
