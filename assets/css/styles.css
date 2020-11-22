@@ -8,9 +8,6 @@ body {
   height: 100%;
 }
 
-a {
-}
-
 #main {
   height: 100%;
   display: flex;
@@ -19,8 +16,12 @@ a {
 }
 
 #canvas {
-  width: 949;
-  height: 1680;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: -1;
 }
 
 #info {
