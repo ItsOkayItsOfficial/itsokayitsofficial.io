@@ -116,7 +116,7 @@ let consoleLogo = `
 let consoleHeader = "%cSOFTWARE ENGINEER & KNOWN HUMAN";
 let consoleTitle1 = "%cHello!";
 let consoleTitle2 = "%cAbout";
-let consoleTitle3 = "%cContact;";
+let consoleTitle3 = "%cContact";
 let consoleBody1 = `%c
 Between growing up in Germany to hanging out in Montreal, studying in Kansas - then Beirut-, advocacy and designing in D.C. to banking and finance & now FINALLY developing in AZ I've tried my hand at a little bit of everything. I've managed to take part in the variety of human experiences!
 
@@ -151,6 +151,7 @@ console.log(
   consoleGrey,
   consoleBlue
 );
+
 console.group(consoleHeader, consoleHeaderStyle);
 console.group(consoleTitle1, consoleTitleStyle);
 console.info(consoleBody1, consoleBodyStyle);
@@ -158,4 +159,9 @@ console.groupEnd(consoleTitle1, consoleTitleStyle);
 console.group(consoleTitle2, consoleTitleStyle);
 console.info(consoleBody2, consoleBodyStyle);
 console.groupEnd(consoleTitle2, consoleTitleStyle);
+console.group(consoleTitle3, consoleTitleStyle);
+Array.from(document.querySelectorAll("#logos > a")).forEach((link) => {
+  console.info(link.getAttribute("href"));
+});
+console.groupEnd(consoleTitle3, consoleTitleStyle);
 console.groupEnd(consoleHeader, consoleHeaderStyle);
