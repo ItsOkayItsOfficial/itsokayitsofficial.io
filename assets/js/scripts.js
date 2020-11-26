@@ -1,5 +1,7 @@
 // Variable assignment
 let canvas = document.getElementById("canvas"),
+  s = document.querySelector("#name"),
+  f = getComputedStyle(s).color,
   w = innerWidth,
   h = innerHeight,
   c = canvas.getContext("2d"),
@@ -62,7 +64,7 @@ let canvas = document.getElementById("canvas"),
     },
   ];
 
-// Drawing function to generate image
+// Drawing function to fill a half pixel by half pixel at input coords
 draw = (t, a, e) => {
   c.fillRect(t * e, -a * e, 0.5, 0.5);
 };
@@ -92,6 +94,7 @@ iterate = () => {
 // Execute by applying Canvas
 canvas.width = w;
 canvas.height = h;
+c.fillStyle = f;
 c.translate(w / 2, h);
 
 // Keep Executing
