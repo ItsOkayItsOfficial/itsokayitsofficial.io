@@ -7,6 +7,7 @@ body {
   letter-spacing: 0.2em;
   text-align: right;
   height: 100%;
+  overflow: hidden;
 }
 
 #main {
@@ -39,7 +40,9 @@ body {
 }
 
 .logo {
-  max-width: 5em;
+  max-width: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 @media (prefers-color-scheme: dark) {
