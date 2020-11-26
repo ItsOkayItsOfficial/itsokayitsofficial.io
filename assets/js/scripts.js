@@ -99,7 +99,3 @@ c.translate(w / 2, h);
 
 // Keep Executing
 iterate();
-
-let console = element.dispatchEvent(
-  new KeyboardEvent("keypress", { key: "f12" })
-);
