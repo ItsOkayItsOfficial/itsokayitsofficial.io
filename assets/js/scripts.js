@@ -1,7 +1,7 @@
 // Variable assignment
 let canvas = document.getElementById("canvas"),
-  s = document.querySelector("#name"),
-  f = getComputedStyle(s).color,
+  s = document.querySelector("#name"), // For randomizing tree color: Math.floor(Math.random() * 16777215).toString(16),
+  f = getComputedStyle(s).color, // For applying randomizecd tree color: "#" + s,
   w = innerWidth,
   h = innerHeight,
   c = canvas.getContext("2d"),
