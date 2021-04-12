@@ -31,7 +31,7 @@ I taught myself programming playing around with internet based virtual worlds an
 `;
 
 let consoleBody2 = `%c
-Currently I'm a Software Engineer at Albertsons Companies, where I serve as Solutions Architect for the Digital Workforce. In this role I'm in charge of the code health and implmentation for robtics and cognative services.
+Currently I'm a Software Engineer at Albertsons Companies, where I serve as Solutions Architect for the Digital Workforce. In this role I'm in charge of the code health and implementation for robotics and cognitive services.
 
 Always learning and growing, and in between my obsessions with my road bike and hockey I'm taking courses in Machine and Deep Learning (like everyone else), and kicking around in Golang or Javascript.
 `;
