@@ -27,13 +27,13 @@ let consoleTitle3 = "%cContact";
 let consoleBody1 = `%c
 Between growing up in Germany to hanging out in Montreal, studying in Kansas - then Beirut-, advocacy and designing in D.C. to banking and finance & now FINALLY developing in AZ I've tried my hand at a little bit of everything. I've managed to take part in the variety of human experiences!
 
-I taught myself programming playing around with internet based virtual worlds and picked up markup by taking apart websites to see how they work. I haven't stopped learning since, even having completed the University of Arizona's Full-stack Developer program in 2017.
+I taught myself programming playing around with internet based virtual worlds and picked up markup by taking apart websites to see how they work. I haven't stopped learning since.
 `;
 
 let consoleBody2 = `%c
-Currently I'm a Software Engineer at Albertsons Companies, where I serve as Solutions Architect for the Digital Workforce. In this role I'm in charge of the code health and implementation for robotics and cognitive services.
+Currently I'm a Solutions Architect in Finance Transformation at Albertsons Companies, Inc. In this role I'm in charge of the implementation and health of AI services for automation, cognition, and processing.
 
-Always learning and growing, and in between my obsessions with my road bike and hockey I'm taking courses in Machine and Deep Learning (like everyone else), and kicking around in Golang or Javascript.
+Always learning and growing, and aside from my obsessions cycling and ice hockey, I'm currently working toward my TOGAF certification, having just completed my GCP Cloud Arch certs.
 `;
 
 // Log Logo
