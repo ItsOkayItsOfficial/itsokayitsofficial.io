@@ -31,9 +31,9 @@ I taught myself programming playing around with internet based virtual worlds an
 `;
 
 let consoleBody2 = `%c
-Currently I'm a Solutions Architect in Finance Transformation at Albertsons Companies, Inc. In this role I'm in charge of the implementation and health of AI services for automation, cognition, and processing.
+Currently AI Innovation Advisor to the CFO at Insight Enterprises.
 
-Always learning and growing, and aside from my obsessions cycling and ice hockey, I'm currently working toward my TOGAF certification, having just completed my GCP Cloud Arch certs.
+Always learning and growing, along with obsessions for cycling and ice hockey.
 `;
 
 // Log Logo
