@@ -1,89 +1,35 @@
-// Styling Variables
-let consoleGrey = "font-weight:bold; color:#777;";
-let consoleBlue = "font-weight:bold; color:#0F669D;";
-let consoleHeaderStyle =
-  "font-size:20px; font-weight:bold; letter-spacing:0.02em; line-height:1.4em; font-family:helvetica,arial; color:#0F669D;";
-let consoleTitleStyle =
-  "font-size:16px; font-weight:normal; letter-spacing:0.2em; line-height:1.4em; font-family:helvetica,arial; color:#0F669D;";
-let consoleBodyStyle =
-  "font-size:14px; font-weight:lighter; letter-spacing:0.2em; line-height:1.4em; font-family:helvetica,arial; color:#777;";
+// For whoever opened the console: the tape, in plain text.
+(() => {
+  const now = new Date();
+  const two = (n) => String(n).padStart(2, "0");
+  const date = `${two(now.getMonth() + 1)}-${two(now.getDate())}-${two(now.getFullYear() % 100)}`;
 
-// Display Variables
-let consoleLogo = `
-%cXX %cXXXXXX %cXX %cXXXXXX
-%cXX %cXX  XX %cXX %cXX  XX
-%cXX %cXX  XX %cXX %cXX  XX
-%cXX %cXX  XX %cXX %cXX  XX
-%cXX %cXX  XX %cXX %cXX  XX
-%cXX %cXX  XX %cXX %cXX  XX
-%cXX %cXX  XX %cXX %cXX  XX
-%cXX %cXXXXXX %cXX %cXXXXXX
-`;
+  const head = "font: 700 11px/1.6 Helvetica, Arial, sans-serif; letter-spacing: .38em; color: #1c3d31;";
+  const tape =
+    "font: 13px/1.55 ui-monospace, Menlo, Consolas, monospace; color: #1c1d22; background: #f7f7f3; padding: 12px 16px;";
+  const hand = "font: 15px/1.6 'Bradley Hand', 'Segoe Print', cursive; color: #4a4e55;";
 
-let consoleHeader = "%cSOFTWARE ENGINEER & KNOWN HUMAN";
-let consoleTitle1 = "%cHello!";
-let consoleTitle2 = "%cAbout";
-let consoleTitle3 = "%cContact";
-let consoleBody1 = `%c
-Between growing up in Germany to hanging out in Montreal, studying in Kansas - then Beirut-, advocacy and designing in D.C. to banking and finance & now FINALLY developing in AZ I've tried my hand at a little bit of everything. I've managed to take part in the variety of human experiences!
-
-I taught myself programming playing around with internet based virtual worlds and picked up markup by taking apart websites to see how they work. I haven't stopped learning since.
-`;
-
-let consoleBody2 = `%c
-Currently AI Innovation Advisor to the CFO at Insight Enterprises.
-
-Always learning and growing, along with obsessions for cycling and ice hockey.
-`;
-
-// Log Logo
-console.log(
-  consoleLogo,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue,
-  consoleGrey,
-  consoleBlue
-);
-
-// Log Body
-console.group(consoleHeader, consoleHeaderStyle);
-console.group(consoleTitle1, consoleTitleStyle);
-console.info(consoleBody1, consoleBodyStyle);
-console.groupEnd(consoleTitle1, consoleTitleStyle);
-console.group(consoleTitle2, consoleTitleStyle);
-console.info(consoleBody2, consoleBodyStyle);
-console.groupEnd(consoleTitle2, consoleTitleStyle);
-console.group(consoleTitle3, consoleTitleStyle);
-Array.from(document.querySelectorAll("#logos > a")).forEach((link) => {
-  console.info(link.getAttribute("href"));
-});
-console.groupEnd(consoleTitle3, consoleTitleStyle);
-console.groupEnd(consoleHeader, consoleHeaderStyle);
+  console.log("%cIOIO  PROOF 12", head);
+  console.log(`%c${date.padStart(24)}  #`, tape);
+  console.log(
+    [
+      "%cHi, I’m Alex.",
+      "",
+      "I’m director of AI operations for Insight’s finance organization. I lead",
+      "Insight’s dedicated “Thundercats” team, with a mandate to pioneer AI",
+      "adoption across finance and translate AI strategy into measurable",
+      "business outcomes.",
+      "",
+      "My work spans building and deploying AI agents, tracking adoption across",
+      "hundreds of finance users, and providing thought leadership to the",
+      "organization at every level.",
+      "",
+      "github.com/ItsOkayItsOfficial",
+      "linkedin.com/in/alexander-pugh",
+      "alexp@itsokayitsofficial.io",
+      "",
+      "It’s okay. It’s official.  A.P.",
+    ].join("\n"),
+    hand
+  );
+})();
