@@ -1,45 +1,77 @@
-<html language="eng">
+<!doctype html>
+<html lang="en">
   <head>
-    <!-- Metadata -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
-    />
-    <meta name="title" content="ItsOkayItsOfficial" />
-    <meta name="author" content="Alexander Pugh" />
-    <meta
-      name="description"
-      content="Portfolio site for Alexander Pugh: robotics developer & known human."
-    />
-    <meta name="image" content="assets/img/ioio_logo.svg" />
-    <!-- Site title -->
-    <title>Alexander Pugh | IOIO</title>
-    <!-- Site icon -->
-    <link rel="shortcut icon" href="assets/img/ioio_logo.png" />
-    <!-- Custom styles -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Alexander Pugh">
+    <meta name="description" content="Alexander Pugh / ItsOkayItsOfficial. A signature in four forms, with more than one way to read it.">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="image" content="assets/img/favicon.svg">
+    <title>IOIO — Alexander Pugh</title>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/scripts.js" defer></script>
+    <script src="assets/js/console.js" defer></script>
   </head>
-
   <body>
-    <canvas id="canvas"></canvas>
+    <main class="sheet">
+      <header class="masthead">
+        <h1>Alexander Pugh</h1>
+        <p id="site-label">ItsOkayItsOfficial</p>
+        <button class="text-button" id="readings-toggle" type="button" aria-controls="readings" aria-expanded="false" hidden>0 of 8 readings</button>
+      </header>
 
-    <div id="main">
-      <div id="info">
-        <h1 id="name">Alexander Pugh</h1>
-        <div id="logos">
-          <a href="https://github.com/ItsOkayItsOfficial"></a>
-          <a href="https://linkedin.com/in/alexander-pugh/"></a>
-          <a href="mailto:alexp@itsokayitsofficial.io"></a>
+      <div class="field">
+        <div class="composition">
+          <div class="rule" aria-hidden="true"></div>
+          <svg class="artwork" viewBox="0 0 1200 680" role="img" aria-labelledby="art-title art-description">
+            <title id="art-title">A signature in four forms</title>
+            <desc id="art-description">Two bars and two rings on a modular grid. Moving the red rule changes their proportions. At the center they align to read I O I O, which can be read more than one way.</desc>
+            <path class="glyph" id="first-i" d="M90 170H158V510H90Z"></path>
+            <path class="glyph ring" id="first-o" d="M396 170A170 170 0 1 0 396 510A170 170 0 1 0 396 170ZM396 238A102 102 0 1 1 396 442A102 102 0 1 1 396 238Z"></path>
+            <path class="glyph" id="second-i" d="M634 170H702V510H634Z"></path>
+            <path class="glyph ring" id="second-o" d="M940 170A170 170 0 1 0 940 510A170 170 0 1 0 940 170ZM940 238A102 102 0 1 1 940 442A102 102 0 1 1 940 238Z"></path>
+            <g class="words words-letters" aria-hidden="true">
+              <text class="word">Its</text><text class="word">Okay</text><text class="word">Its</text><text class="word">Official</text>
+            </g>
+            <g class="words words-binary" aria-hidden="true">
+              <text class="word">One</text><text class="word">Zero</text><text class="word">One</text><text class="word">Zero</text>
+            </g>
+            <g class="construction" aria-hidden="true">
+              <path class="grid-lines"></path>
+              <path class="bounds"></path>
+              <text class="measure"></text><text class="measure"></text><text class="measure"></text><text class="measure"></text>
+            </g>
+          </svg>
+          <span class="midpoint" aria-hidden="true"></span>
+          <input class="control" id="balance" type="range" min="0" max="1000" step="10" value="40"
+            aria-label="Recompose the four forms" aria-describedby="control-help" disabled>
         </div>
-        <!-- /#logos -->
-      </div>
-      <!-- /#info -->
-    </div>
-    <!-- /#main-->
 
-    <!-- Custom scripts -->
-    <script src="assets/js/scripts.js"></script>
-    <script src="assets/js/console.js"></script>
+        <section class="readings" id="readings" tabindex="-1" aria-label="Readings" hidden>
+          <ul id="readings-list"></ul>
+          <div class="readings-foot">
+            <p id="readings-count"></p>
+            <button class="text-button" id="readings-back" type="button">Back to the forms</button>
+            <a href="https://github.com/ItsOkayItsOfficial">GitHub</a>
+            <a href="https://linkedin.com/in/alexander-pugh/">LinkedIn</a>
+          </div>
+        </section>
+      </div>
+
+      <footer class="colophon">
+        <div class="caption" id="caption-block" data-tone="ambient">
+          <p id="caption">ItsOkayItsOfficial.</p>
+          <p id="caption-text">Four forms. One signature.</p>
+        </div>
+        <div class="contact">
+          <button class="text-button" id="motion-toggle" type="button" aria-pressed="false" hidden>Pause motion</button>
+          <a id="hello" href="mailto:alexp@itsokayitsofficial.io">Say hello</a>
+        </div>
+      </footer>
+      <p class="sr-only" id="control-help">Arrow keys recompose; with Shift they move by tenths. Home and End reach the edges. Escape returns to the center. At the center, type 1 for numbers or I for letters. Hold Space to see the construction, or press G to toggle it. Press R to read the forms in the other direction.</p>
+      <p class="sr-only" id="announcement" role="status" aria-live="polite"></p>
+      <noscript><p>Enable JavaScript to explore the signature. You can still say hello by email.</p></noscript>
+    </main>
   </body>
 </html>
