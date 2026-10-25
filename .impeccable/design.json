@@ -1,0 +1,496 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-25T13:59:10.555Z",
+  "title": "Design System: It's Okay It's Official",
+  "extensions": {
+    "colorMeta": {
+      "ink-red": {
+        "role": "primary",
+        "displayName": "Ribbon Red",
+        "canonical": "oklch(52.2% 0.172 28.1)",
+        "tonalRamp": [
+          "oklch(15% 0.172 28.1)",
+          "oklch(26% 0.172 28.1)",
+          "oklch(37% 0.172 28.1)",
+          "oklch(48% 0.172 28.1)",
+          "oklch(59% 0.172 28.1)",
+          "oklch(70% 0.172 28.1)",
+          "oklch(82% 0.172 28.1)",
+          "oklch(95% 0.172 28.1)"
+        ]
+      },
+      "felt": {
+        "role": "neutral",
+        "displayName": "Bottle-Green Felt",
+        "canonical": "oklch(33.1% 0.045 167.8)",
+        "tonalRamp": [
+          "oklch(15% 0.045 167.8)",
+          "oklch(26% 0.045 167.8)",
+          "oklch(37% 0.045 167.8)",
+          "oklch(48% 0.045 167.8)",
+          "oklch(59% 0.045 167.8)",
+          "oklch(70% 0.045 167.8)",
+          "oklch(82% 0.045 167.8)",
+          "oklch(95% 0.045 167.8)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Bond Paper",
+        "canonical": "oklch(97.5% 0.005 106.5)",
+        "tonalRamp": [
+          "oklch(15% 0.005 106.5)",
+          "oklch(26% 0.005 106.5)",
+          "oklch(37% 0.005 106.5)",
+          "oklch(48% 0.005 106.5)",
+          "oklch(59% 0.005 106.5)",
+          "oklch(70% 0.005 106.5)",
+          "oklch(82% 0.005 106.5)",
+          "oklch(95% 0.005 106.5)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ribbon Black",
+        "canonical": "oklch(23.2% 0.010 276.6)",
+        "tonalRamp": [
+          "oklch(15% 0.010 276.6)",
+          "oklch(26% 0.010 276.6)",
+          "oklch(37% 0.010 276.6)",
+          "oklch(48% 0.010 276.6)",
+          "oklch(59% 0.010 276.6)",
+          "oklch(70% 0.010 276.6)",
+          "oklch(82% 0.010 276.6)",
+          "oklch(95% 0.010 276.6)"
+        ]
+      },
+      "graphite": {
+        "role": "neutral",
+        "displayName": "Pencil Graphite",
+        "canonical": "oklch(42.3% 0.013 261.8)",
+        "tonalRamp": [
+          "oklch(15% 0.013 261.8)",
+          "oklch(26% 0.013 261.8)",
+          "oklch(37% 0.013 261.8)",
+          "oklch(48% 0.013 261.8)",
+          "oklch(59% 0.013 261.8)",
+          "oklch(70% 0.013 261.8)",
+          "oklch(82% 0.013 261.8)",
+          "oklch(95% 0.013 261.8)"
+        ]
+      },
+      "machine": {
+        "role": "neutral",
+        "displayName": "Graphite Housing",
+        "canonical": "oklch(27.5% 0.009 255.6)",
+        "tonalRamp": [
+          "oklch(15% 0.009 255.6)",
+          "oklch(26% 0.009 255.6)",
+          "oklch(37% 0.009 255.6)",
+          "oklch(48% 0.009 255.6)",
+          "oklch(59% 0.009 255.6)",
+          "oklch(70% 0.009 255.6)",
+          "oklch(82% 0.009 255.6)",
+          "oklch(95% 0.009 255.6)"
+        ]
+      },
+      "machine-hi": {
+        "role": "neutral",
+        "displayName": "Housing Highlight",
+        "canonical": "oklch(32.4% 0.012 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.012 258.4)",
+          "oklch(26% 0.012 258.4)",
+          "oklch(37% 0.012 258.4)",
+          "oklch(48% 0.012 258.4)",
+          "oklch(59% 0.012 258.4)",
+          "oklch(70% 0.012 258.4)",
+          "oklch(82% 0.012 258.4)",
+          "oklch(95% 0.012 258.4)"
+        ]
+      },
+      "key": {
+        "role": "neutral",
+        "displayName": "Pale Keycap",
+        "canonical": "oklch(92.7% 0.007 97.4)",
+        "tonalRamp": [
+          "oklch(15% 0.007 97.4)",
+          "oklch(26% 0.007 97.4)",
+          "oklch(37% 0.007 97.4)",
+          "oklch(48% 0.007 97.4)",
+          "oklch(59% 0.007 97.4)",
+          "oklch(70% 0.007 97.4)",
+          "oklch(82% 0.007 97.4)",
+          "oklch(95% 0.007 97.4)"
+        ]
+      },
+      "key-lo": {
+        "role": "neutral",
+        "displayName": "Keycap Lip",
+        "canonical": "oklch(71.1% 0.010 100.0)",
+        "tonalRamp": [
+          "oklch(15% 0.010 100.0)",
+          "oklch(26% 0.010 100.0)",
+          "oklch(37% 0.010 100.0)",
+          "oklch(48% 0.010 100.0)",
+          "oklch(59% 0.010 100.0)",
+          "oklch(70% 0.010 100.0)",
+          "oklch(82% 0.010 100.0)",
+          "oklch(95% 0.010 100.0)"
+        ]
+      },
+      "key-ink": {
+        "role": "neutral",
+        "displayName": "Keycap Legend",
+        "canonical": "oklch(27.1% 0.009 255.6)",
+        "tonalRamp": [
+          "oklch(15% 0.009 255.6)",
+          "oklch(26% 0.009 255.6)",
+          "oklch(37% 0.009 255.6)",
+          "oklch(48% 0.009 255.6)",
+          "oklch(59% 0.009 255.6)",
+          "oklch(70% 0.009 255.6)",
+          "oklch(82% 0.009 255.6)",
+          "oklch(95% 0.009 255.6)"
+        ]
+      },
+      "fn": {
+        "role": "neutral",
+        "displayName": "Slate Keycap",
+        "canonical": "oklch(41.1% 0.011 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.011 258.4)",
+          "oklch(26% 0.011 258.4)",
+          "oklch(37% 0.011 258.4)",
+          "oklch(48% 0.011 258.4)",
+          "oklch(59% 0.011 258.4)",
+          "oklch(70% 0.011 258.4)",
+          "oklch(82% 0.011 258.4)",
+          "oklch(95% 0.011 258.4)"
+        ]
+      },
+      "fn-lo": {
+        "role": "neutral",
+        "displayName": "Slate Lip",
+        "canonical": "oklch(29.6% 0.008 255.6)",
+        "tonalRamp": [
+          "oklch(15% 0.008 255.6)",
+          "oklch(26% 0.008 255.6)",
+          "oklch(37% 0.008 255.6)",
+          "oklch(48% 0.008 255.6)",
+          "oklch(59% 0.008 255.6)",
+          "oklch(70% 0.008 255.6)",
+          "oklch(82% 0.008 255.6)",
+          "oklch(95% 0.008 255.6)"
+        ]
+      },
+      "fn-ink": {
+        "role": "neutral",
+        "displayName": "Slate Legend",
+        "canonical": "oklch(95.2% 0.006 128.5)",
+        "tonalRamp": [
+          "oklch(15% 0.006 128.5)",
+          "oklch(26% 0.006 128.5)",
+          "oklch(37% 0.006 128.5)",
+          "oklch(48% 0.006 128.5)",
+          "oklch(59% 0.006 128.5)",
+          "oklch(70% 0.006 128.5)",
+          "oklch(82% 0.006 128.5)",
+          "oklch(95% 0.006 128.5)"
+        ]
+      },
+      "lcd": {
+        "role": "neutral",
+        "displayName": "Sage LCD",
+        "canonical": "oklch(71.6% 0.031 132.7)",
+        "tonalRamp": [
+          "oklch(15% 0.031 132.7)",
+          "oklch(26% 0.031 132.7)",
+          "oklch(37% 0.031 132.7)",
+          "oklch(48% 0.031 132.7)",
+          "oklch(59% 0.031 132.7)",
+          "oklch(70% 0.031 132.7)",
+          "oklch(82% 0.031 132.7)",
+          "oklch(95% 0.031 132.7)"
+        ]
+      },
+      "label": {
+        "role": "neutral",
+        "displayName": "Silk-Screen Grey",
+        "canonical": "oklch(74.5% 0.012 252.1)",
+        "tonalRamp": [
+          "oklch(15% 0.012 252.1)",
+          "oklch(26% 0.012 252.1)",
+          "oklch(37% 0.012 252.1)",
+          "oklch(48% 0.012 252.1)",
+          "oklch(59% 0.012 252.1)",
+          "oklch(70% 0.012 252.1)",
+          "oklch(82% 0.012 252.1)",
+          "oklch(95% 0.012 252.1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "\"Hi, I’m Alex.\" on the back of the tape."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "The note on the back of the tape: paragraphs and links."
+      },
+      "note": {
+        "displayName": "Note",
+        "purpose": "Pencil margin notes on the tape, and the A.P. sign-off."
+      },
+      "pencil-action": {
+        "displayName": "Pencil action",
+        "purpose": "Underlined pencil words that act: Turn over, Put down."
+      },
+      "aside": {
+        "displayName": "Aside",
+        "purpose": "A one- or two-word gloss beside a printed line (today, last time)."
+      },
+      "key": {
+        "displayName": "Key",
+        "purpose": "Number and function legends on the keycaps."
+      },
+      "key-operator": {
+        "displayName": "Key operator",
+        "purpose": "Plus and total legends on the double-height keys."
+      },
+      "brand": {
+        "displayName": "Brand",
+        "purpose": "The IOIO wordmark on the maker plate."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Silk-screened housing labels such as Sound and Proof 12."
+      }
+    },
+    "shadows": [
+      {
+        "name": "paper-drop",
+        "value": "drop-shadow(1px 7px 9px rgb(0 0 0 / 0.32))",
+        "purpose": "The tape as a whole (applied as a filter)."
+      },
+      {
+        "name": "paper-curl",
+        "value": "inset 7px 0 7px -7px rgb(0 0 0 / 0.09), inset -7px 0 7px -7px rgb(0 0 0 / 0.09)",
+        "purpose": "Side edges of every tape line."
+      },
+      {
+        "name": "housing",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.1), 0 0 0 1px rgb(0 0 0 / 0.4), 0 12px 34px rgb(0 0 0 / 0.5)",
+        "purpose": "The calculator body."
+      },
+      {
+        "name": "keycap",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.75), inset 0 -2px 0 rgb(0 0 0 / 0.07), 0 3px 0 #a3a29b, 0 5px 9px rgb(0 0 0 / 0.38)",
+        "purpose": "Pale keys at rest."
+      },
+      {
+        "name": "keycap-pressed",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.5), 0 1px 0 #a3a29b, 0 2px 4px rgb(0 0 0 / 0.35)",
+        "purpose": "Any key while pressed, over its own lip colour."
+      },
+      {
+        "name": "lcd-well",
+        "value": "inset 0 2px 5px rgb(0 0 0 / 0.5), inset 0 -1px 0 rgb(255 255 255 / 0.18), 0 1px 0 rgb(255 255 255 / 0.06)",
+        "purpose": "The display window."
+      },
+      {
+        "name": "print-slot",
+        "value": "inset 0 3px 4px rgb(0 0 0 / 0.9), 0 1px 0 rgb(255 255 255 / 0.07)",
+        "purpose": "The dark mouth the tape enters."
+      },
+      {
+        "name": "loose-paper",
+        "value": "2px 8px 18px rgb(0 0 0 / 0.4)",
+        "purpose": "The skip-link scrap and other loose paper."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Switch knob, skip scrap, tear-bar lift, and turning a torn strip over (760ms)."
+      },
+      {
+        "name": "paper-feed",
+        "value": "steps(n, jump-start), about 7px and 24ms per step (12ms when backlogged)",
+        "purpose": "The tape advancing after each print; never a glide."
+      },
+      {
+        "name": "print-sweep",
+        "value": "140ms + 1.6ms per dot, max 420ms, left to right",
+        "purpose": "The print head striking a line column by column."
+      },
+      {
+        "name": "pencil-write",
+        "value": "38ms per character + 60ms between words, linear clip reveal",
+        "purpose": "Pencil notes appearing word by word."
+      },
+      {
+        "name": "pencil-stroke",
+        "value": "240–260ms cubic-bezier(.55,0,.25,1)",
+        "purpose": "Ticks, arrows, and the double rule drawing on."
+      },
+      {
+        "name": "key-travel",
+        "value": "70ms ease-out, 2px",
+        "purpose": "Key press travel."
+      },
+      {
+        "name": "tear-flight",
+        "value": "1150ms cubic-bezier(.2,.8,.2,1); flip rotateY(180deg) from 28% on cubic-bezier(.45,0,.2,1)",
+        "purpose": "A torn strip flying to rest and turning over."
+      },
+      {
+        "name": "put-down",
+        "value": "650ms cubic-bezier(.5,0,.75,0)",
+        "purpose": "A torn strip leaving off the left edge."
+      }
+    ],
+    "breakpoints": []
+  },
+  "components": [
+    {
+      "name": "Number Key",
+      "kind": "button",
+      "refersTo": "key",
+      "description": "Pale keycap on a solid lip; travels 2px when pressed.",
+      "html": "<button type=\"button\" class=\"ds-key\">7</button>",
+      "css": ".ds-key { display: inline-grid; place-content: center; gap: 3px; width: var(--kw, 64px); height: var(--kh, 48px); border: 0; border-radius: 9px; font: 600 20px/1 \"Helvetica Neue\", Helvetica, Arial, sans-serif; cursor: pointer; transition: translate 70ms ease-out, box-shadow 70ms ease-out; background: var(--key, #e8e7e2); color: var(--key-ink, #24272b); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.75), inset 0 -2px 0 rgb(0 0 0 / 0.07), 0 3px 0 var(--key-lo, #a3a29b), 0 5px 9px rgb(0 0 0 / 0.38); } .ds-key:hover { filter: brightness(1.06); } .ds-key:active { translate: 0 2px; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.5), 0 1px 0 var(--key-lo, #a3a29b), 0 2px 4px rgb(0 0 0 / 0.35); } .ds-key:focus-visible { outline: 2px solid var(--paper, #f7f7f3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Function Key",
+      "kind": "button",
+      "refersTo": "key-fn",
+      "description": "Slate keycap for divide, multiply, minus, and plus.",
+      "html": "<button type=\"button\" class=\"ds-key-fn\" aria-label=\"Multiply\">×</button>",
+      "css": ".ds-key-fn { display: inline-grid; place-content: center; gap: 3px; width: var(--kw, 64px); height: var(--kh, 48px); border: 0; border-radius: 9px; font: 600 20px/1 \"Helvetica Neue\", Helvetica, Arial, sans-serif; cursor: pointer; transition: translate 70ms ease-out, box-shadow 70ms ease-out; background: var(--fn, #474b51); color: var(--fn-ink, #eef0ec); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.14), 0 3px 0 var(--fn-lo, #2a2d31), 0 5px 9px rgb(0 0 0 / 0.38); } .ds-key-fn:hover { filter: brightness(1.06); } .ds-key-fn:active { translate: 0 2px; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 1px 0 var(--fn-lo, #2a2d31), 0 2px 4px rgb(0 0 0 / 0.35); } .ds-key-fn:focus-visible { outline: 2px solid var(--paper, #f7f7f3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Total Key",
+      "kind": "button",
+      "refersTo": "key-total",
+      "description": "The only red cap on the machine; every total earns a pencil note.",
+      "html": "<button type=\"button\" class=\"ds-key-total\" aria-label=\"Total\"><span aria-hidden=\"true\">=</span><small aria-hidden=\"true\">Total</small></button>",
+      "css": ".ds-key-total { display: inline-grid; place-content: center; gap: 3px; width: var(--kw, 64px); height: var(--kh, 48px); border: 0; border-radius: 9px; font: 600 20px/1 \"Helvetica Neue\", Helvetica, Arial, sans-serif; cursor: pointer; transition: translate 70ms ease-out, box-shadow 70ms ease-out; height: calc(2 * var(--kh, 48px) + var(--kg, 10px)); background: var(--ink-red, #b8322a); color: #fff4ef; font-size: 26px; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.28), 0 3px 0 #741c16, 0 5px 9px rgb(0 0 0 / 0.38); } .ds-key-total small { font: 700 8px/1 \"Helvetica Neue\", Helvetica, Arial, sans-serif; letter-spacing: 0.2em; text-transform: uppercase; } .ds-key-total:hover { filter: brightness(1.06); } .ds-key-total:active { translate: 0 2px; box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.2), 0 1px 0 #741c16, 0 2px 4px rgb(0 0 0 / 0.35); } .ds-key-total:focus-visible { outline: 2px solid var(--paper, #f7f7f3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Pencil Button",
+      "kind": "button",
+      "refersTo": "pencil-button",
+      "description": "An action written on paper: underlined graphite words, no box.",
+      "html": "<div class=\"ds-paper\"><button type=\"button\" class=\"ds-pencil-btn\">Turn over</button></div>",
+      "css": ".ds-paper { background: var(--paper, #f7f7f3); padding: 18px 20px; } .ds-pencil-btn { padding: 4px 2px; border: 0; background: none; color: var(--graphite, #4a4e55); font: 400 19px/1 \"Pen\", \"Bradley Hand\", \"Segoe Print\", cursive; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; cursor: pointer; } .ds-pencil-btn:hover { color: var(--ink, #1c1d22); } .ds-pencil-btn:focus-visible { outline: 2px solid var(--graphite, #4a4e55); outline-offset: 2px; border-radius: 2px; }"
+    },
+    {
+      "name": "Paper Link",
+      "kind": "nav",
+      "refersTo": "verso-link",
+      "description": "A written-out address on the back of the tape.",
+      "html": "<p class=\"ds-verso\"><a class=\"ds-link\" href=\"#\">github.com/<wbr>ItsOkayItsOfficial</a></p>",
+      "css": ".ds-verso { margin: 0; padding: 20px 22px; background: var(--paper, #f7f7f3); font: 400 19px/1.06 \"Pen\", \"Bradley Hand\", \"Segoe Print\", cursive; } .ds-link { color: var(--ink, #1c1d22); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; overflow-wrap: break-word; } .ds-link:hover { color: var(--ink-red, #b8322a); } .ds-link:focus-visible { outline: 2px solid var(--graphite, #4a4e55); outline-offset: 2px; border-radius: 2px; }"
+    },
+    {
+      "name": "Skip Scrap",
+      "kind": "nav",
+      "refersTo": "skip-scrap",
+      "description": "The page's only navigation: a scrap of paper that slides in on focus.",
+      "html": "<a class=\"ds-skip\" href=\"#\">Skip to Alex’s bio</a>",
+      "css": ".ds-skip { display: inline-block; padding: 8px 14px 10px; background: var(--paper, #f7f7f3); color: var(--graphite, #4a4e55); font: 400 21px/1 \"Pen\", \"Bradley Hand\", \"Segoe Print\", cursive; text-decoration: none; box-shadow: 2px 8px 18px rgb(0 0 0 / 0.4); } .ds-skip:focus-visible { outline: 2px solid var(--paper, #f7f7f3); outline-offset: 3px; }"
+    },
+    {
+      "name": "Sound Switch",
+      "kind": "custom",
+      "refersTo": "sound-switch",
+      "description": "A silk-screened slide switch on the housing; off by default.",
+      "html": "<div class=\"ds-housing\"><button type=\"button\" class=\"ds-switch\" role=\"switch\" aria-checked=\"true\"><span>Sound</span><span class=\"ds-switch-track\" aria-hidden=\"true\"><span class=\"ds-switch-knob\"></span></span></button></div>",
+      "css": ".ds-housing { padding: 16px 20px; background: var(--machine, #25282c); border-radius: 12px; } .ds-switch { display: flex; align-items: center; gap: 8px; padding: 6px 0 6px 8px; border: 0; background: none; color: var(--label, #a7adb4); font: 600 10px/1 \"Helvetica Neue\", Helvetica, Arial, sans-serif; letter-spacing: 0.22em; text-transform: uppercase; cursor: pointer; } .ds-switch-track { position: relative; width: 30px; height: 14px; border-radius: 7px; background: #121416; box-shadow: inset 0 1px 3px rgb(0 0 0 / 0.85); } .ds-switch-knob { position: absolute; top: 2px; left: 2px; width: 14px; height: 10px; border-radius: 4px; background: linear-gradient(#dfe2e5, #9aa0a6); transition: translate 180ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-switch[aria-checked=\"true\"] { color: #eef0f2; } .ds-switch[aria-checked=\"true\"] .ds-switch-knob { translate: 12px 0; background: linear-gradient(#ffd9cf, #e0705e); } .ds-switch:focus-visible { outline: 2px solid var(--paper, #f7f7f3); outline-offset: 2px; border-radius: 4px; }"
+    },
+    {
+      "name": "Tape With Pencil Note",
+      "kind": "custom",
+      "refersTo": "pencil-note",
+      "description": "Bond paper on felt carrying a graphite margin note, as written after a total.",
+      "html": "<div class=\"ds-felt\"><div class=\"ds-tape\"><p class=\"ds-note\">Me: Alex Pugh. Dir., AI ops, Insight.</p></div></div>",
+      "css": ".ds-felt { padding: 24px; background: var(--felt, #1c3d31); } .ds-tape { width: var(--tape, 224px); background: var(--paper, #f7f7f3); box-shadow: inset 7px 0 7px -7px rgb(0 0 0 / 0.09), inset -7px 0 7px -7px rgb(0 0 0 / 0.09); filter: drop-shadow(1px 7px 9px rgb(0 0 0 / 0.32)); } .ds-note { margin: 0; padding: 0.2em 16px 0.55em 18px; color: var(--graphite, #4a4e55); font: 400 19px/1.02 \"Pen\", \"Bradley Hand\", \"Segoe Print\", cursive; rotate: -0.5deg; transform-origin: 0 50%; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Proof Tape",
+    "overview": "The site is one object on one desk: a graphite IOIO Proof 12 printing calculator under a warm lamp, its single strip of bright bond paper running from the top of the screen down into the print slot, across a bottle-green felt blotter. Nothing is interface chrome. Every surface is a material with a job: felt is the ground, paper carries the record, the housing holds the controls, the LCD reflects, graphite signs off. Every control is either a part of the machine (keycaps, a sound switch, a serrated tear bar) or a word written in pencil on paper.\n\nTwo hands make every mark, and they never trade places. The machine prints level, flush-right 5x7 dot-matrix figures through a two-colour ribbon, black for entries and red for subtractions, negatives and errors, and it advances the paper in hard mechanical steps. The person answers in graphite: a script note, a tick beside a total, a double rule under the final one, each set slightly askew and written a word at a time. Density is low and the palette is quiet so that each printed line and each pencil mark lands as an event.\n\nThe world refuses the about-me profile card and the generative canvas with a name in the corner. Who Alex is arrives as pencil marginalia on a working tape, and the full note is written on the back of the strip once it is torn off.",
+    "keyCharacteristics": [
+      "One bottle-green felt ground under a single overhead lamp; everything else is a physical object resting on it.",
+      "One accent: ribbon red, owned by the total key and by red print.",
+      "Two voices on fixed media: dot-matrix print and silk-screened Helvetica for the machine, graphite Pen script for the person.",
+      "Square-cut and torn paper edges, softly rounded plastic keys, a housing rounded only at the top.",
+      "Real key travel, a stepped paper feed and a word-by-word pencil, all of which collapse to their end state under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Two-Ribbon Rule",
+        "body": "The print head has exactly two inks. Ribbon Black prints entries, date and time stamps, clears and positive totals; Ribbon Red prints subtractions, negative figures and errors. Red never prints for emphasis.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Red Key Rule",
+        "body": "The total key is the only red cap on the machine. Every other key is pale or slate.",
+        "section": "colors"
+      },
+      {
+        "name": "The Material Ground Rule",
+        "body": "Felt is the only background. Anything placed on it is an object with its own material and its own shadow; nothing floats on the felt as a tinted panel.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Hands Rule",
+        "body": "The machine speaks in dot-matrix print and Helvetica on the housing; the person speaks in Pen script in graphite. Helvetica never appears on paper, and the pencil never writes on the machine.",
+        "section": "typography"
+      },
+      {
+        "name": "The Grain Rule",
+        "body": "Pencil that is read (notes, asides, ticks, rules, arrows, the back of the tape) passes through the shared graphite filter: fractal-noise displacement plus a paper-tooth mask, so it reads as pencil on fibre rather than a vector line. Pencil that is pressed (links, pencil buttons, the skip scrap) stays crisp.",
+        "section": "typography"
+      },
+      {
+        "name": "The Overhead Lamp Rule",
+        "body": "There is one light, above the desk. Every shadow falls down the screen, highlights sit on top edges, and wells darken from the top. A shadow cast upward or sideways belongs to a different lamp.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Key Travel Rule",
+        "body": "Every key stands on a solid 3px lip in its own darker shade and travels 2px when pressed, its lip shrinking to 1px, in 70ms. Hover only brightens a key slightly (brightness 1.06), and only on devices that can hover.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Level Print Rule",
+        "body": "What the machine makes sits dead level: print, LCD, keys, housing. Only the hand and loose paper tilt: notes between -1.1 and 0.4 degrees, ticks between -9 and 5 degrees, a torn strip at rest between -0.6 and -3.6 degrees.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "**Do** keep Bottle-Green Felt (#1c3d31) as the only background, with its lamp glow, vignette and grain.",
+      "**Do** print machine output only as 5x7 dot matrix in Ribbon Black or Ribbon Red, flush right, with its symbol in the last column.",
+      "**Do** write the person's voice in Pen and Pencil Graphite, and draw new pencil marks as round-capped strokes through the graphite filter.",
+      "**Do** make every new control a machine part (keycap, switch, tear bar) or an underlined pencil word on paper.",
+      "**Do** use a 2px Bond Paper focus ring on the machine and a 2px Pencil Graphite ring on paper.",
+      "**Do** keep every keycap legend at 4.5:1 or better against its cap.",
+      "**Do** deliver the end state at once under reduced motion: lines already printed, notes already written, ticks already drawn, a torn strip already at rest."
+    ],
+    "donts": [
+      "**Don't** introduce a new hue; every colour is a desk material or the ribbon's red.",
+      "**Don't** add a second red cap to the machine, or print in red for emphasis.",
+      "**Don't** round, border or tint paper; its edges are cut square or torn into 9px teeth.",
+      "**Don't** set Helvetica on paper or Pen on the machine.",
+      "**Don't** imitate the dot matrix on the page with a monospace or pixel webfont.",
+      "**Don't** feed the tape smoothly; it advances in steps.",
+      "**Don't** present the bio as a profile card or sign a generative canvas with a name in the corner; the bio is pencil on the back of a torn tape.",
+      "**Don't** use brand icons or logos for links; write the addresses out.",
+      "**Don't** use pure white or pure black as an on-screen surface or text colour."
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+# GitHub Pages: keep the design records out of the published site.
+exclude:
+  - PRODUCT.md
+  - DESIGN.md
