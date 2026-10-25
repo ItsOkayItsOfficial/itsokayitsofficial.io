@@ -512,7 +512,7 @@ body {
 }
 
 .key.clear {
-  color: #ff9a85;
+  color: #ffa594;
 }
 
 .key.plus {
@@ -537,7 +537,6 @@ body {
   font: 700 8px/1 var(--sans);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  opacity: 0.85;
 }
 
 .key:active,
