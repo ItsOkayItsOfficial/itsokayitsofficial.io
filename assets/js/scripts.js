@@ -479,7 +479,7 @@
   function fmt(n) {
     if (!Number.isFinite(n) || Math.abs(n) >= 1e12) return null;
     const abs = Math.abs(n);
-    let text = abs.toFixed(Math.max(0, Math.min(6, 11 - String(Math.floor(abs)).length)));
+    let text = abs.toFixed(Math.max(0, 12 - String(Math.floor(abs)).length));
     if (text.includes(".")) text = text.replace(/\.?0+$/, "");
     const [whole, part] = text.split(".");
     const out = whole.replace(/\B(?=(\d{3})+(?!\d))/g, ",") + (part ? `.${part}` : "");
@@ -547,6 +547,13 @@
     const value = take();
     if (state.mul && value === null) {
       state.mul.op = op;
+      const text = fmt(state.mul.left);
+      print({
+        text,
+        sym: op,
+        red: true,
+        say: `Correction: ${text}, operator changed to ${op === "×" ? "multiply" : "divide"}`,
+      });
       return;
     }
     const operand = value ?? state.last;
@@ -619,6 +626,7 @@
 
   function show(text) {
     shown = String(text).replace(/,/g, "");
+    $("#lcd-output").textContent = String(text);
     paintLCD();
   }
 
@@ -760,9 +768,15 @@
   function turn(el, toBack) {
     const card = $(".card", el);
     const flipped = toBack ?? !card.classList.contains("flipped");
+    const outgoing = flipped ? $(".front", el) : $(".verso", el);
+    const moveFocus = outgoing.contains(document.activeElement);
     card.classList.toggle("flipped", flipped);
     $(".front", el).inert = flipped;
     $(".verso", el).inert = !flipped;
+    if (moveFocus) {
+      const incoming = flipped ? $(".verso", el) : $(".front", el);
+      $(".pencil-btn", incoming).focus({ preventScroll: true });
+    }
     return flipped;
   }
 
@@ -834,7 +848,6 @@
     old.removeAttribute("role");
     old.removeAttribute("aria-live");
     old.removeAttribute("aria-label");
-    old.setAttribute("aria-hidden", "true");
     front.append(old, pencilButton("Turn over", () => turn(el)));
 
     roll = document.createElement("ol");

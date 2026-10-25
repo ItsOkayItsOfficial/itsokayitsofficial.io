@@ -687,6 +687,13 @@ body {
   filter: none;
 }
 
+.side.front {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: #c9cbc5 transparent;
+}
+
 .side.front .roll > li,
 .side.front .roll::after {
   box-shadow: none;
